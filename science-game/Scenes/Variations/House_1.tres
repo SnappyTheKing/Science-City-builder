@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="HouseVariant" load_steps=3 format=3 uid="uid://dql3lodug606p"]
+
+[ext_resource type="PackedScene" uid="uid://jqxpr1dvby85" path="res://Assets/GLB format/building-type-a.glb" id="1_4q0q4"]
+[ext_resource type="Script" uid="uid://bh2nxvsa8snl6" path="res://Scripts/HouseVariant.gd" id="1_fle0f"]
+
+[resource]
+script = ExtResource("1_fle0f")
+model = ExtResource("1_4q0q4")
+metadata/_custom_type_script = "uid://bh2nxvsa8snl6"
