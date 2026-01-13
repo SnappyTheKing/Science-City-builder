@@ -29,3 +29,5 @@ environment = SubResource("Environment_kldst")
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.889998, 0.4559644, 0, -0.4559644, 0.88999796, 4.3543544, 3.9881, 9.71183)
 script = ExtResource("2_gl6un")
+move_speed = 10.0
+height_speed = 3.0

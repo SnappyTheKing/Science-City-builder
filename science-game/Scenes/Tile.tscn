@@ -2,10 +2,11 @@
 
 [ext_resource type="Script" uid="uid://cqcnaoyiiub4c" path="res://Scenes/tile.gd" id="1_t0yj4"]
 
-[sub_resource type="BoxMesh" id="BoxMesh_r4md0"]
-
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t0yj4"]
-albedo_color = Color(0.4106439, 0.69197, 0.34874558, 1)
+albedo_color = Color(0.25318366, 0.59128684, 0.3376795, 1)
+
+[sub_resource type="BoxMesh" id="BoxMesh_r4md0"]
+material = SubResource("StandardMaterial3D_t0yj4")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_t0yj4"]
 
@@ -21,7 +22,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
 mesh = SubResource("BoxMesh_r4md0")
 skeleton = NodePath("../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_t0yj4")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
 shape = SubResource("BoxShape3D_t0yj4")
