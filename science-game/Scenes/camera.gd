@@ -1,5 +1,7 @@
 extends Camera3D
 
+# TODO Revamp so that the camera can be turned
+
 @export var move_speed : float = 5.0
 @export var height_speed : float = 1.0
 var camera_enabled: bool = true

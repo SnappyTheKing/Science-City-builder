@@ -3,7 +3,7 @@ extends Node3D
 var house = preload("res://house.tscn")
 
 func _ready() -> void:
-	print(global_position)
+	pass
 
 
 func _on_ground_input_event(_camera: Node, event: InputEvent, _event_position: Vector3, _normal: Vector3, _shape_idx: int) -> void:
@@ -13,5 +13,6 @@ func _on_ground_input_event(_camera: Node, event: InputEvent, _event_position: V
 
 func assign_type():
 	var h = house.instantiate()
-	
+	if($Building.get_child_count()):
+		$Building.get_child(0).queue_free()
 	$Building.add_child(h)
