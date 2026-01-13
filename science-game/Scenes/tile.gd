@@ -1,6 +1,7 @@
 extends Node3D
 
-var house = preload("res://house.tscn")
+@export var house_options: Array[PackedScene]
+
 
 func _ready() -> void:
 	pass
@@ -12,7 +13,7 @@ func _on_ground_input_event(_camera: Node, event: InputEvent, _event_position: V
 			assign_type()
 
 func assign_type():
-	var h = house.instantiate()
+	var h = house_options[randi_range(0, len(house_options)-1)].instantiate()
 	if($Building.get_child_count()):
 		$Building.get_child(0).queue_free()
 	$Building.add_child(h)
