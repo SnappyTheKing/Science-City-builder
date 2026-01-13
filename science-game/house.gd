@@ -7,4 +7,4 @@ func _ready() -> void:
 	$Money_Timer.wait_time = interval
 
 func _on_money_timer_timeout() -> void:
-	hide()
+	Global.money += money
