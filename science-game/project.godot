@@ -19,6 +19,14 @@ config/icon="res://icon.svg"
 
 Global="*res://Scripts/global.gd"
 
+[file_customization]
+
+folder_colors={
+"res://Assets/": "yellow",
+"res://Scenes/": "orange",
+"res://Scripts/": "teal"
+}
+
 [input]
 
 forwards={

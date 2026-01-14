@@ -1,10 +1,28 @@
-[gd_scene load_steps=9 format=3 uid="uid://pkyo6bj8p7qp"]
+[gd_scene load_steps=27 format=3 uid="uid://pkyo6bj8p7qp"]
 
-[ext_resource type="Script" uid="uid://cqcnaoyiiub4c" path="res://Scenes/tile.gd" id="1_t0yj4"]
-[ext_resource type="PackedScene" uid="uid://jqxpr1dvby85" path="res://Assets/GLB format/building-type-a.glb" id="2_er2vu"]
-[ext_resource type="PackedScene" uid="uid://cn6iyfnf6g0sv" path="res://Assets/GLB format/building-type-b.glb" id="3_bk6am"]
-[ext_resource type="PackedScene" uid="uid://j2dbytirifld" path="res://Assets/GLB format/building-type-c.glb" id="4_jvlbh"]
-[ext_resource type="PackedScene" uid="uid://2xa3mckvfvgd" path="res://Assets/GLB format/building-type-d.glb" id="5_6r1mx"]
+[ext_resource type="Script" uid="uid://cqcnaoyiiub4c" path="res://Scripts/tile.gd" id="1_t0yj4"]
+[ext_resource type="PackedScene" uid="uid://jqxpr1dvby85" path="res://Assets/Residential/building-type-a.glb" id="2_er2vu"]
+[ext_resource type="PackedScene" uid="uid://cn6iyfnf6g0sv" path="res://Assets/Residential/building-type-b.glb" id="3_bk6am"]
+[ext_resource type="PackedScene" uid="uid://j2dbytirifld" path="res://Assets/Residential/building-type-c.glb" id="4_jvlbh"]
+[ext_resource type="PackedScene" uid="uid://2xa3mckvfvgd" path="res://Assets/Residential/building-type-d.glb" id="5_6r1mx"]
+[ext_resource type="PackedScene" uid="uid://mgmwefgjsox1" path="res://Assets/Residential/building-type-e.glb" id="6_iavu2"]
+[ext_resource type="PackedScene" uid="uid://dpi1jaqh8sa54" path="res://Assets/Residential/building-type-f.glb" id="7_yilci"]
+[ext_resource type="PackedScene" uid="uid://cu0gii2wlxcjs" path="res://Assets/Residential/building-type-g.glb" id="8_qcm5n"]
+[ext_resource type="PackedScene" uid="uid://ct60ixh5otb1l" path="res://Assets/Residential/building-type-h.glb" id="9_x5olk"]
+[ext_resource type="PackedScene" uid="uid://bwgccuowyrqc1" path="res://Assets/Residential/building-type-i.glb" id="10_0yt2p"]
+[ext_resource type="PackedScene" uid="uid://d1ro7w3jjodjk" path="res://Assets/Residential/building-type-j.glb" id="11_lfh81"]
+[ext_resource type="PackedScene" uid="uid://dn7tajv70whwb" path="res://Assets/Residential/building-type-k.glb" id="12_c5rhf"]
+[ext_resource type="PackedScene" uid="uid://ccdvayksjkqrl" path="res://Assets/Residential/building-type-l.glb" id="13_wnlkw"]
+[ext_resource type="PackedScene" uid="uid://jmiwwpcd4bvg" path="res://Assets/Residential/building-type-m.glb" id="14_pvbnu"]
+[ext_resource type="PackedScene" uid="uid://mr31wyc7yllo" path="res://Assets/Residential/building-type-n.glb" id="15_5s5we"]
+[ext_resource type="PackedScene" uid="uid://hpyl8318p0i2" path="res://Assets/Residential/building-type-o.glb" id="16_fa51g"]
+[ext_resource type="PackedScene" uid="uid://dxmsnchdslxce" path="res://Assets/Residential/building-type-p.glb" id="17_1ameg"]
+[ext_resource type="PackedScene" uid="uid://b5gt4kdf8nked" path="res://Assets/Residential/building-type-q.glb" id="18_vxmy1"]
+[ext_resource type="PackedScene" uid="uid://cj5vqbmk3k5om" path="res://Assets/Residential/building-type-r.glb" id="19_anj4u"]
+[ext_resource type="PackedScene" uid="uid://b8lhbjjoipx00" path="res://Assets/Residential/building-type-s.glb" id="20_mtfjg"]
+[ext_resource type="PackedScene" uid="uid://cs2b8ikfedpih" path="res://Assets/Residential/building-type-t.glb" id="21_nhc2i"]
+[ext_resource type="PackedScene" uid="uid://by3iyx634ef73" path="res://Assets/Residential/building-type-u.glb" id="22_lmgkn"]
+[ext_resource type="PackedScene" uid="uid://dovr1ulyixmgk" path="res://Assets/Comercial/building-skyscraper-d.glb" id="23_yilci"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_t0yj4"]
 albedo_color = Color(0.25318366, 0.59128684, 0.3376795, 1)
@@ -16,13 +34,13 @@ material = SubResource("StandardMaterial3D_t0yj4")
 
 [node name="Tile" type="Node3D"]
 script = ExtResource("1_t0yj4")
-house_options = Array[PackedScene]([ExtResource("2_er2vu"), ExtResource("3_bk6am"), ExtResource("4_jvlbh"), ExtResource("5_6r1mx")])
+house_options = Array[PackedScene]([ExtResource("2_er2vu"), ExtResource("3_bk6am"), ExtResource("4_jvlbh"), ExtResource("5_6r1mx"), ExtResource("6_iavu2"), ExtResource("7_yilci"), ExtResource("8_qcm5n"), ExtResource("9_x5olk"), ExtResource("10_0yt2p"), ExtResource("11_lfh81"), ExtResource("12_c5rhf"), ExtResource("13_wnlkw"), ExtResource("14_pvbnu"), ExtResource("15_5s5we"), ExtResource("16_fa51g"), ExtResource("17_1ameg"), ExtResource("18_vxmy1"), ExtResource("19_anj4u"), ExtResource("20_mtfjg"), ExtResource("21_nhc2i"), ExtResource("22_lmgkn"), ExtResource("23_yilci")])
 
 [node name="Building" type="Node3D" parent="."]
 transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 
 [node name="Ground" type="StaticBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, -1, 0)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
 mesh = SubResource("BoxMesh_r4md0")
