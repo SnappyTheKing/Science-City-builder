@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="House" load_steps=3 format=3 uid="uid://d3sdb6dri84e8"]
+
+[ext_resource type="PackedScene" uid="uid://jqxpr1dvby85" path="res://Assets/Residential/building-type-a.glb" id="1_vn72e"]
+[ext_resource type="Script" uid="uid://dceowduh476bp" path="res://Scripts/Resources/house_class.gd" id="2_pn85e"]
+
+[resource]
+script = ExtResource("2_pn85e")
+model = Array[PackedScene]([ExtResource("1_vn72e")])
+metadata/_custom_type_script = "uid://dceowduh476bp"

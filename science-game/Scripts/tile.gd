@@ -1,10 +1,7 @@
 extends Node3D
 
-var house = preload("res://Scenes/house.tscn")
-var appartment = preload("res://Scenes/appartment.tscn")
-var factory = preload("res://Scenes/factory.tscn")
-var park = preload("res://Scenes/park.tscn")
-var comercial = preload("res://Scenes/comercial.tscn")
+var building = load("res://Scenes/building.tscn")
+
 
 func _ready() -> void:
 	pass
@@ -16,11 +13,7 @@ func _on_ground_input_event(_camera: Node, event: InputEvent, _event_position: V
 			assign_type()
 
 func assign_type():
-	var h
-	
-	if($Building.get_child_count()):
-		$Building.get_child(0).queue_free()
-		h = appartment.instantiate()
-	else:
-		h = house.instantiate()
+	var h = building.instantiate()
+	h.building = load("res://Scenes/Buildings/house.tres")
+	h.building.parent = self
 	$Building.add_child(h)

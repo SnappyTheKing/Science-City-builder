@@ -1,18 +1,30 @@
-[gd_scene load_steps=5 format=3 uid="uid://dc5i0ibmtq5ei"]
+[gd_scene load_steps=4 format=3 uid="uid://dwpag8uchjomc"]
 
-[ext_resource type="Script" uid="uid://di1tkqgvslxjg" path="res://Scripts/Buildings/house.gd" id="1_218mn"]
 [ext_resource type="Script" uid="uid://dceowduh476bp" path="res://Scripts/Resources/house_class.gd" id="2_3jr7h"]
-[ext_resource type="PackedScene" uid="uid://jqxpr1dvby85" path="res://Assets/Residential/building-type-a.glb" id="2_cx658"]
+
+[sub_resource type="GDScript" id="GDScript_okrnj"]
+script/source = "extends Node3D
+
+@export var house_options: Array[House]
+
+var selected
+
+func _ready() -> void:
+	selected = house_options[randi_range(0, len(house_options)-1)]
+	add_child(selected.mesh.instantiate())
+	$Money_Timer.wait_time = selected.interval
+
+func _on_money_timer_timeout() -> void:
+	Global.money += selected.income
+"
 
 [sub_resource type="Resource" id="Resource_iqtyj"]
 script = ExtResource("2_3jr7h")
-mesh = ExtResource("2_cx658")
 metadata/_custom_type_script = "uid://dceowduh476bp"
 
 [node name="House" type="Node3D"]
-script = ExtResource("1_218mn")
+script = SubResource("GDScript_okrnj")
 house_options = Array[ExtResource("2_3jr7h")]([SubResource("Resource_iqtyj")])
-interval = 3.0
 
 [node name="Money_Timer" type="Timer" parent="."]
 autostart = true
