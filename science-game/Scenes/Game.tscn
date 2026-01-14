@@ -21,7 +21,7 @@ glow_enabled = true
 script = ExtResource("1_iukft")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(-0.8660254, -0.43301278, 0.25, 0, 0.49999997, 0.86602545, -0.50000006, 0.75, -0.43301266, 0, 0, 0)
+transform = Transform3D(0.46506226, 0.8374561, 0.28702688, 0.46318886, -0.50648516, 0.727275, 0.7544358, -0.20528045, -0.6234475, 0, 0, 0)
 shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
