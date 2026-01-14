@@ -1,32 +1,17 @@
-[gd_scene load_steps=23 format=3 uid="uid://dc5i0ibmtq5ei"]
+[gd_scene load_steps=5 format=3 uid="uid://dc5i0ibmtq5ei"]
 
-[ext_resource type="Script" uid="uid://di1tkqgvslxjg" path="res://Scripts/house.gd" id="1_218mn"]
+[ext_resource type="Script" uid="uid://di1tkqgvslxjg" path="res://Scripts/Buildings/house.gd" id="1_218mn"]
+[ext_resource type="Script" uid="uid://dceowduh476bp" path="res://Scripts/Resources/house_class.gd" id="2_3jr7h"]
 [ext_resource type="PackedScene" uid="uid://jqxpr1dvby85" path="res://Assets/Residential/building-type-a.glb" id="2_cx658"]
-[ext_resource type="PackedScene" uid="uid://cn6iyfnf6g0sv" path="res://Assets/Residential/building-type-b.glb" id="3_g3br3"]
-[ext_resource type="PackedScene" uid="uid://j2dbytirifld" path="res://Assets/Residential/building-type-c.glb" id="4_rss08"]
-[ext_resource type="PackedScene" uid="uid://2xa3mckvfvgd" path="res://Assets/Residential/building-type-d.glb" id="5_lv2cm"]
-[ext_resource type="PackedScene" uid="uid://mgmwefgjsox1" path="res://Assets/Residential/building-type-e.glb" id="6_qabsv"]
-[ext_resource type="PackedScene" uid="uid://dpi1jaqh8sa54" path="res://Assets/Residential/building-type-f.glb" id="7_mukck"]
-[ext_resource type="PackedScene" uid="uid://cu0gii2wlxcjs" path="res://Assets/Residential/building-type-g.glb" id="8_ga0bc"]
-[ext_resource type="PackedScene" uid="uid://ct60ixh5otb1l" path="res://Assets/Residential/building-type-h.glb" id="9_wig7y"]
-[ext_resource type="PackedScene" uid="uid://bwgccuowyrqc1" path="res://Assets/Residential/building-type-i.glb" id="10_pxic7"]
-[ext_resource type="PackedScene" uid="uid://d1ro7w3jjodjk" path="res://Assets/Residential/building-type-j.glb" id="11_2s1ff"]
-[ext_resource type="PackedScene" uid="uid://dn7tajv70whwb" path="res://Assets/Residential/building-type-k.glb" id="12_llf5m"]
-[ext_resource type="PackedScene" uid="uid://ccdvayksjkqrl" path="res://Assets/Residential/building-type-l.glb" id="13_2khrr"]
-[ext_resource type="PackedScene" uid="uid://jmiwwpcd4bvg" path="res://Assets/Residential/building-type-m.glb" id="14_8l4j6"]
-[ext_resource type="PackedScene" uid="uid://mr31wyc7yllo" path="res://Assets/Residential/building-type-n.glb" id="15_5nq7v"]
-[ext_resource type="PackedScene" uid="uid://hpyl8318p0i2" path="res://Assets/Residential/building-type-o.glb" id="16_qm5wo"]
-[ext_resource type="PackedScene" uid="uid://dxmsnchdslxce" path="res://Assets/Residential/building-type-p.glb" id="17_u37cu"]
-[ext_resource type="PackedScene" uid="uid://b5gt4kdf8nked" path="res://Assets/Residential/building-type-q.glb" id="18_dm8pi"]
-[ext_resource type="PackedScene" uid="uid://cj5vqbmk3k5om" path="res://Assets/Residential/building-type-r.glb" id="19_qby8n"]
-[ext_resource type="PackedScene" uid="uid://b8lhbjjoipx00" path="res://Assets/Residential/building-type-s.glb" id="20_8wor2"]
-[ext_resource type="PackedScene" uid="uid://cs2b8ikfedpih" path="res://Assets/Residential/building-type-t.glb" id="21_625p0"]
-[ext_resource type="PackedScene" uid="uid://by3iyx634ef73" path="res://Assets/Residential/building-type-u.glb" id="22_kgs4k"]
+
+[sub_resource type="Resource" id="Resource_iqtyj"]
+script = ExtResource("2_3jr7h")
+mesh = ExtResource("2_cx658")
+metadata/_custom_type_script = "uid://dceowduh476bp"
 
 [node name="House" type="Node3D"]
 script = ExtResource("1_218mn")
-house_options = Array[PackedScene]([ExtResource("2_cx658"), ExtResource("3_g3br3"), ExtResource("4_rss08"), ExtResource("5_lv2cm"), ExtResource("6_qabsv"), ExtResource("7_mukck"), ExtResource("8_ga0bc"), ExtResource("9_wig7y"), ExtResource("10_pxic7"), ExtResource("11_2s1ff"), ExtResource("12_llf5m"), ExtResource("13_2khrr"), ExtResource("14_8l4j6"), ExtResource("15_5nq7v"), ExtResource("16_qm5wo"), ExtResource("17_u37cu"), ExtResource("18_dm8pi"), ExtResource("19_qby8n"), ExtResource("20_8wor2"), ExtResource("21_625p0"), ExtResource("22_kgs4k")])
-money = null
+house_options = Array[ExtResource("2_3jr7h")]([SubResource("Resource_iqtyj")])
 interval = 3.0
 
 [node name="Money_Timer" type="Timer" parent="."]
