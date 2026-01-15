@@ -1,11 +1,14 @@
 shader_type spatial;
+render_mode diffuse_toon;
 
 void vertex() {
-	// Called for every vertex the material is visible on.
+
 }
 
 void fragment() {
-	ALBEDO = vec3(0.5,0.2,0.1);
+	METALLIC = 0.0;
+	ROUGHNESS = 0.5;
+	ALBEDO = vec3(0.05, 0.3, 0.1);
 }
 
 //void light() {

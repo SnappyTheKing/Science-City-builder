@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Factory" load_steps=5 format=3 uid="uid://cbngqeismtlsr"]
+
+[ext_resource type="Script" uid="uid://cb8jm0xa66ppo" path="res://Scripts/Resources/factory_class.gd" id="1_apnyd"]
+[ext_resource type="PackedScene" uid="uid://dmda04h66f5wg" path="res://Assets/Industrial/building-m.glb" id="1_ga27o"]
+[ext_resource type="Script" uid="uid://cdflcmlgts2l2" path="res://Scripts/Resources/building_class.gd" id="2_pophx"]
+[ext_resource type="Resource" uid="uid://1d5nhneeflin" path="res://Scenes/Buildings/Factory3.tres" id="4_p4dsc"]
+
+[resource]
+script = ExtResource("1_apnyd")
+model = Array[PackedScene]([ExtResource("1_ga27o")])
+upgrades = Array[ExtResource("2_pophx")]([ExtResource("4_p4dsc")])
+metadata/_custom_type_script = "uid://cb8jm0xa66ppo"

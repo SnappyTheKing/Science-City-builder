@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Park" load_steps=4 format=3 uid="uid://wxp50qekwq7s"]
+
+[ext_resource type="Script" uid="uid://bfe0xkfi3chv6" path="res://Scripts/Resources/park_class.gd" id="1_axntf"]
+[ext_resource type="PackedScene" uid="uid://cfuupj2yy16yk" path="res://Assets/Residential/planter.glb" id="1_i7wss"]
+[ext_resource type="Script" uid="uid://cdflcmlgts2l2" path="res://Scripts/Resources/building_class.gd" id="2_i7wss"]
+
+[resource]
+script = ExtResource("1_axntf")
+model = Array[PackedScene]([ExtResource("1_i7wss")])
+upgrade_cost = -1
+metadata/_custom_type_script = "uid://bfe0xkfi3chv6"

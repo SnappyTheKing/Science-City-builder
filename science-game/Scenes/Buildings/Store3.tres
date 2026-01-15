@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Store" load_steps=6 format=3 uid="uid://l712yomm0v6s"]
+
+[ext_resource type="Script" uid="uid://dch0b0d2j6tng" path="res://Scripts/Resources/store_class.gd" id="1_paq1i"]
+[ext_resource type="PackedScene" uid="uid://vgsnbbdrymfv" path="res://Assets/Comercial/building-skyscraper-b.glb" id="1_pdtbp"]
+[ext_resource type="PackedScene" uid="uid://dovr1ulyixmgk" path="res://Assets/Comercial/building-skyscraper-d.glb" id="2_r0dc0"]
+[ext_resource type="Script" uid="uid://cdflcmlgts2l2" path="res://Scripts/Resources/building_class.gd" id="2_rxpk3"]
+[ext_resource type="PackedScene" uid="uid://cm5xabau0u6ts" path="res://Assets/Comercial/building-skyscraper-e.glb" id="3_01a08"]
+
+[resource]
+script = ExtResource("1_paq1i")
+model = Array[PackedScene]([ExtResource("1_pdtbp"), ExtResource("2_r0dc0"), ExtResource("3_01a08")])
+upgrade_cost = -1
+metadata/_custom_type_script = "uid://dch0b0d2j6tng"

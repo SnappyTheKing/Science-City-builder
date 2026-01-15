@@ -1,8 +1,8 @@
-class_name House
+class_name Apartment
 extends Building
 
-@export var income: float = 5
-@export var interval: float = 3
+@export var income: float = 50
+@export var interval: float = 5
 
 func run():
 	var t = Timer.new()

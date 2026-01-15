@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Store" load_steps=5 format=3 uid="uid://cccxkk0ifxhnx"]
+
+[ext_resource type="Script" uid="uid://dch0b0d2j6tng" path="res://Scripts/Resources/store_class.gd" id="1_0ljj8"]
+[ext_resource type="PackedScene" uid="uid://boqfly1q65y67" path="res://Assets/Comercial/building-h.glb" id="1_j3s40"]
+[ext_resource type="Script" uid="uid://cdflcmlgts2l2" path="res://Scripts/Resources/building_class.gd" id="2_v6e5d"]
+[ext_resource type="Resource" uid="uid://dd2mimpte3ho5" path="res://Scenes/Buildings/Store2.tres" id="4_kbtt5"]
+
+[resource]
+script = ExtResource("1_0ljj8")
+model = Array[PackedScene]([ExtResource("1_j3s40")])
+upgrades = Array[ExtResource("2_v6e5d")]([ExtResource("4_kbtt5")])
+metadata/_custom_type_script = "uid://dch0b0d2j6tng"

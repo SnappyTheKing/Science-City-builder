@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="Park" load_steps=5 format=3 uid="uid://c88acopjpyj32"]
+
+[ext_resource type="Script" uid="uid://bfe0xkfi3chv6" path="res://Scripts/Resources/park_class.gd" id="1_kv6uf"]
+[ext_resource type="PackedScene" uid="uid://bbq3qb466mntj" path="res://Assets/Residential/tree-small.glb" id="1_v4c67"]
+[ext_resource type="Script" uid="uid://cdflcmlgts2l2" path="res://Scripts/Resources/building_class.gd" id="2_6rekf"]
+[ext_resource type="Resource" uid="uid://kggcv7hhgwxt" path="res://Scenes/Buildings/Park2.tres" id="4_vopkk"]
+
+[resource]
+script = ExtResource("1_kv6uf")
+model = Array[PackedScene]([ExtResource("1_v4c67")])
+upgrades = Array[ExtResource("2_6rekf")]([ExtResource("4_vopkk")])
+metadata/_custom_type_script = "uid://bfe0xkfi3chv6"

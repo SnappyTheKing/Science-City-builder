@@ -1,4 +1,4 @@
-[gd_scene load_steps=7 format=3 uid="uid://cooitn3q3xpqa"]
+[gd_scene load_steps=9 format=3 uid="uid://cooitn3q3xpqa"]
 
 [ext_resource type="Script" uid="uid://b7f0m2advcbck" path="res://Scripts/game.gd" id="1_iukft"]
 [ext_resource type="Script" uid="uid://diukjg6h42trn" path="res://Scripts/camera.gd" id="2_gl6un"]
@@ -17,12 +17,21 @@ sky = SubResource("Sky_j5yw3")
 tonemap_mode = 2
 glow_enabled = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j5yw3"]
+albedo_color = Color(0.19607843, 1, 1, 1)
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_kldst"]
+material = SubResource("StandardMaterial3D_j5yw3")
+
 [node name="Game" type="Node3D"]
 script = ExtResource("1_iukft")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.46506226, 0.8374561, 0.28702688, 0.46318886, -0.50648516, 0.727275, 0.7544358, -0.20528045, -0.6234475, 0, 0, 0)
+transform = Transform3D(0.20831634, -0.123065464, -0.97028834, 0.82655233, -0.5082205, 0.2419165, -0.5228918, -0.85238916, -0.00415057, 0, 0, 0)
 shadow_enabled = true
+directional_shadow_split_1 = 0.411
+directional_shadow_split_2 = 0.515
+directional_shadow_split_3 = 0.717
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_kldst")
@@ -37,3 +46,7 @@ height_speed = 3.0
 offset_right = 40.0
 offset_bottom = 23.0
 script = ExtResource("3_j5yw3")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 4.318, 0, -13.246)
+mesh = SubResource("PlaneMesh_kldst")

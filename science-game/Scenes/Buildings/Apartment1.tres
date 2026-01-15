@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="Apartment" load_steps=5 format=3 uid="uid://bu2evf8oro1yo"]
+
+[ext_resource type="Script" uid="uid://c8aqncx3dgon" path="res://Scripts/Resources/apartment_class.gd" id="1_f73tx"]
+[ext_resource type="PackedScene" uid="uid://c47epdincb031" path="res://Assets/Comercial/building-f.glb" id="1_t6gan"]
+[ext_resource type="Script" uid="uid://cdflcmlgts2l2" path="res://Scripts/Resources/building_class.gd" id="3_m44es"]
+[ext_resource type="Resource" uid="uid://dkwa428d8pmtv" path="res://Scenes/Buildings/Apartment2.tres" id="4_7swcq"]
+
+[resource]
+script = ExtResource("1_f73tx")
+model = Array[PackedScene]([ExtResource("1_t6gan")])
+upgrades = Array[ExtResource("3_m44es")]([ExtResource("4_7swcq")])
+upgrade_cost = 100
+metadata/_custom_type_script = "uid://c8aqncx3dgon"

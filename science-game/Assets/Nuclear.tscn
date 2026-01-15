@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://dbnu0up6q802h"]
+
+[ext_resource type="PackedScene" uid="uid://n2c454bc55w8" path="res://Assets/Industrial/chimney-large.glb" id="1_w707a"]
+[ext_resource type="PackedScene" uid="uid://l5haxyod7ue1" path="res://Assets/Industrial/chimney-medium.glb" id="2_urr4j"]
+[ext_resource type="PackedScene" uid="uid://dhtpx6saetts4" path="res://Assets/Industrial/chimney-small.glb" id="3_afwe1"]
+[ext_resource type="PackedScene" uid="uid://b6uk33iot0ynt" path="res://Assets/Industrial/detail-tank.glb" id="4_afwe1"]
+
+[node name="Nuclear" type="Node3D"]
+
+[node name="chimney-large2" parent="." instance=ExtResource("1_w707a")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="chimney-medium2" parent="." instance=ExtResource("2_urr4j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, -0.013, -0.845)
+
+[node name="chimney-small2" parent="." instance=ExtResource("3_afwe1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, -0.003, -0.356)
+
+[node name="chimney-small3" parent="." instance=ExtResource("3_afwe1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 0, 0.052)
+
+[node name="detail-tank2" parent="." instance=ExtResource("4_afwe1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0.11)
+
+[node name="detail-tank3" parent="." instance=ExtResource("4_afwe1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0.515)

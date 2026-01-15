@@ -1,14 +1,14 @@
 [gd_scene load_steps=6 format=3 uid="uid://pkyo6bj8p7qp"]
 
 [ext_resource type="Script" uid="uid://cqcnaoyiiub4c" path="res://Scripts/tile.gd" id="1_t0yj4"]
-[ext_resource type="Shader" uid="uid://udojano5fij7" path="res://Scenes/tileshader.gdshader" id="2_iof5j"]
+[ext_resource type="Shader" uid="uid://udojano5fij7" path="res://Scripts/tileshader.gdshader" id="2_iof5j"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_r4md0"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_iof5j"]
 render_priority = 0
 shader = ExtResource("2_iof5j")
 
 [sub_resource type="BoxMesh" id="BoxMesh_r4md0"]
-material = SubResource("ShaderMaterial_r4md0")
+material = SubResource("ShaderMaterial_iof5j")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_t0yj4"]
 

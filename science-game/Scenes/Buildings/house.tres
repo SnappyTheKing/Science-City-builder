@@ -1,9 +1,17 @@
-[gd_resource type="Resource" script_class="House" load_steps=3 format=3 uid="uid://d3sdb6dri84e8"]
+[gd_resource type="Resource" script_class="House" load_steps=9 format=3 uid="uid://d3sdb6dri84e8"]
 
 [ext_resource type="PackedScene" uid="uid://jqxpr1dvby85" path="res://Assets/Residential/building-type-a.glb" id="1_vn72e"]
+[ext_resource type="PackedScene" uid="uid://cn6iyfnf6g0sv" path="res://Assets/Residential/building-type-b.glb" id="2_pjmxs"]
 [ext_resource type="Script" uid="uid://dceowduh476bp" path="res://Scripts/Resources/house_class.gd" id="2_pn85e"]
+[ext_resource type="Script" uid="uid://cdflcmlgts2l2" path="res://Scripts/Resources/building_class.gd" id="4_8228p"]
+[ext_resource type="Resource" uid="uid://bu2evf8oro1yo" path="res://Scenes/Buildings/Apartment1.tres" id="5_gwwjy"]
+[ext_resource type="Resource" uid="uid://cxgab7sw0xh6" path="res://Scenes/Buildings/Factory1.tres" id="6_mvc3e"]
+[ext_resource type="Resource" uid="uid://cccxkk0ifxhnx" path="res://Scenes/Buildings/Store1.tres" id="7_5uyjy"]
+[ext_resource type="Resource" uid="uid://c88acopjpyj32" path="res://Scenes/Buildings/Park1.tres" id="8_2etx0"]
 
 [resource]
 script = ExtResource("2_pn85e")
-model = Array[PackedScene]([ExtResource("1_vn72e")])
+model = Array[PackedScene]([ExtResource("1_vn72e"), ExtResource("2_pjmxs")])
+upgrades = Array[ExtResource("4_8228p")]([ExtResource("5_gwwjy"), ExtResource("6_mvc3e"), ExtResource("7_5uyjy"), ExtResource("8_2etx0")])
+upgrade_cost = 10
 metadata/_custom_type_script = "uid://dceowduh476bp"
