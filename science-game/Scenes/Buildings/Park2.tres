@@ -7,6 +7,8 @@
 
 [resource]
 script = ExtResource("1_yvd80")
+discount = 15.0
 model = Array[PackedScene]([ExtResource("1_j5lag")])
 upgrades = Array[ExtResource("2_i8y1l")]([ExtResource("4_qy8cc")])
+upgrade_cost = 250
 metadata/_custom_type_script = "uid://bfe0xkfi3chv6"

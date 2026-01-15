@@ -8,6 +8,8 @@
 
 [resource]
 script = ExtResource("1_a55ny")
+productivity = 15.0
 model = Array[PackedScene]([ExtResource("1_2tlm5"), ExtResource("2_exrfa")])
 upgrades = Array[ExtResource("2_cfxy2")]([ExtResource("5_rrj2n")])
+upgrade_cost = 2000
 metadata/_custom_type_script = "uid://dch0b0d2j6tng"

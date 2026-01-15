@@ -7,6 +7,8 @@
 
 [resource]
 script = ExtResource("1_apnyd")
+extra_time = 15.0
 model = Array[PackedScene]([ExtResource("1_ga27o")])
 upgrades = Array[ExtResource("2_pophx")]([ExtResource("4_p4dsc")])
+upgrade_cost = 1500
 metadata/_custom_type_script = "uid://cb8jm0xa66ppo"
