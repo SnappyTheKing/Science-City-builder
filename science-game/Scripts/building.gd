@@ -1,4 +1,5 @@
 extends Node3D
+class_name BuildingScene
 
 var building: Building
 
@@ -15,6 +16,7 @@ func update():
 		remove_child(node)
 	set_mesh()
 	building.run()
+	count_stats()
 
 func set_mesh():
 	var selected = building.model[randi_range(0, len(building.model)-1)].instantiate()
@@ -29,3 +31,7 @@ func upgrade():
 	building = building.upgrades[randi_range(0, len(building.upgrades)-1)]
 	building.parent = temp_parent
 	update()
+
+func count_stats():
+	for b in get_parent().get_parent().get_parent().get_tiles(Vector2(get_parent().position.x, get_parent().position.z)):
+		print(b.upgrade_cost)

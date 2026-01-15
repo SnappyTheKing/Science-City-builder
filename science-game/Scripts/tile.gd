@@ -1,7 +1,8 @@
 extends Node3D
+class_name Tile
 
 var building_scene = load("res://Scenes/building.tscn")
-var building: Node
+var building: BuildingScene
 
 func _ready() -> void:
 	pass
