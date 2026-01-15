@@ -3,9 +3,13 @@ class_name BuildingScene
 
 var building: Building
 
+var moneyMult: float = 1
+var costMult: float = 1
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	update()
+	count_stats()
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
@@ -16,22 +20,33 @@ func update():
 		remove_child(node)
 	set_mesh()
 	building.run()
-	count_stats()
+	
 
 func set_mesh():
 	var selected = building.model[randi_range(0, len(building.model)-1)].instantiate()
 	add_child(selected)
 
 func upgrade():
-	if (building.upgrade_cost < 0 or Global.money < building.upgrade_cost):
+	if (building.upgrade_cost < 0 or Global.money < building.upgrade_cost*costMult):
 		return
-	Global.money -= building.upgrade_cost
+	Global.money -= building.upgrade_cost * costMult
 	
 	var temp_parent = building.parent
 	building = building.upgrades[randi_range(0, len(building.upgrades)-1)]
 	building.parent = temp_parent
+	
 	update()
+	Global.count_all_stats()
 
 func count_stats():
-	for b in get_parent().get_parent().get_parent().get_tiles(Vector2(get_parent().position.x, get_parent().position.z)):
-		print(b.upgrade_cost)
+	moneyMult = 1
+	costMult = 1
+	
+	if building is Factory:
+		Global.time += building.extra_time
+	
+	for b in Global.get_tiles(Vector2(get_parent().get_parent().position.x, get_parent().get_parent().position.z)):
+		if b.building is Store :
+			moneyMult += b.building.productivity/100
+		if b.building is Park and building.upgrade_cost > 0:
+			costMult *= 1 - (b.building.discount/100)

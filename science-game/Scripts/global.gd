@@ -1,3 +1,21 @@
 extends Node
 
 var money = 0
+var time = 300
+var map: Array[Tile]
+
+
+func get_tiles(pos: Vector2) -> Array[Node3D]:
+	var list: Array[Node3D]
+	for t in map:
+		if t.find_child("Structure").get_child_count() and pos.distance_to(Vector2(t.position.x, t.position.z)) < 3 and pos != Vector2(t.position.x, t.position.z):
+			print("Structure Found")
+			list.append(t.find_child("Structure").get_child(0))
+	
+	return list
+
+func count_all_stats():
+	time = 300
+	for t in map:
+		if t.find_child("Structure").get_child_count():
+			t.find_child("Structure").get_child(0).count_stats()

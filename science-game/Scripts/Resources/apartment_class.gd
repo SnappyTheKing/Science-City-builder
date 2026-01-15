@@ -13,4 +13,4 @@ func run():
 	parent.add_child(t)
 
 func timer_elapsed():
-	Global.money += income
+	Global.money += income * parent.moneyMult

@@ -14,12 +14,12 @@ func _on_ground_input_event(_camera: Node, event: InputEvent, _event_position: V
 			assign_type()
 
 func assign_type():
-	if ($Building.get_child_count()):
+	if ($Structure.get_child_count()):
 		building.upgrade()
 		return
 	
 	building = building_scene.instantiate()
 	
 	building.building = load("res://Scenes/Buildings/house.tres")
-	building.building.parent = self
-	$Building.add_child(building)
+	building.building.parent = building
+	$Structure.add_child(building)

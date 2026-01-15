@@ -43,8 +43,11 @@ move_speed = 10.0
 height_speed = 3.0
 
 [node name="Label" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
+anchors_preset = -1
+anchor_right = 0.19100001
+anchor_bottom = 0.09900001
+offset_right = -0.03201294
+offset_bottom = -0.15200806
 script = ExtResource("3_j5yw3")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]

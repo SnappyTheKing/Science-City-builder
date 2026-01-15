@@ -1,6 +1,6 @@
 extends Node3D
 
-var map: Array[Tile]
+
 var tile = preload("res://Scenes/Tile.tscn")
 var noise = FastNoiseLite.new()
 
@@ -16,12 +16,5 @@ func _ready() -> void:
 			var t = tile.instantiate()
 			
 			t.position = Vector3(2*x,noise.get_noise_2d(x, y)*10 + 0.5 ,2*y)
-			map.append(t)
+			Global.map.append(t)
 			add_child(t)
-
-func get_tiles(pos: Vector2) -> Array[Building]:
-	var list: Array[Building]
-	for t in map:
-		if t.building and pos.distance_to(Vector2(t.position.x, t.position.z)) < 3:
-			list.append(t.building.get_child(0).building)
-	return list
