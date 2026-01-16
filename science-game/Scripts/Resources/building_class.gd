@@ -7,7 +7,10 @@ class_name Building
 @export var upgrade_cost: int
 
 
-var parent: Node
+var parent: BuildingScene
 
 func run():
 	pass
+
+func get_tooltip_text() -> String:
+	return ""

@@ -26,7 +26,9 @@ func enable_tooltip(b: Node3D):
 	#get_tree().get_current_scene().add_child(t)
 	var t = get_tree().get_current_scene().find_child("Tooltip")
 	
-	t.type.text = b.building.name
+	var building: Building = b.building
+	
+	t.type.text = building.get_tooltip_text()
 	
 	t.visible = true
 
