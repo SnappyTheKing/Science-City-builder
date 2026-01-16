@@ -9,6 +9,7 @@
 [resource]
 script = ExtResource("1_paq1i")
 productivity = 25.0
+name = "Skyscraper"
 model = Array[PackedScene]([ExtResource("1_pdtbp"), ExtResource("2_r0dc0"), ExtResource("3_01a08")])
 upgrade_cost = -1
 metadata/_custom_type_script = "uid://dch0b0d2j6tng"

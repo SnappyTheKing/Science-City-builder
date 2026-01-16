@@ -7,6 +7,7 @@
 
 [resource]
 script = ExtResource("1_kv6uf")
+name = "Small Park"
 model = Array[PackedScene]([ExtResource("1_v4c67")])
 upgrades = Array[ExtResource("2_6rekf")]([ExtResource("4_vopkk")])
 upgrade_cost = 50

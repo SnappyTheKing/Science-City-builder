@@ -8,6 +8,7 @@
 [resource]
 script = ExtResource("1_adx2o")
 interval = 3.0
+name = "Tier 2 Apartment"
 model = Array[PackedScene]([ExtResource("1_ec5a1")])
 upgrades = Array[ExtResource("3_nf7o8")]([ExtResource("4_imnjf")])
 upgrade_cost = 1000

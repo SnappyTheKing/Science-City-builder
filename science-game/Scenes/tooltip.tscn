@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://0xb28axtdirx"]
+
+[ext_resource type="Script" uid="uid://cvgd3u8cd55cy" path="res://Scripts/tooltip.gd" id="1_ogi1g"]
+
+[node name="Tooltip" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ogi1g")
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.22600001
+anchor_bottom = 0.157
+offset_right = -0.35202026
+offset_bottom = 0.26399994
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Stats" type="RichTextLabel" parent="Panel"]
+layout_mode = 1
+anchors_preset = 4
+anchor_top = 0.5
+anchor_bottom = 0.5
+offset_left = 14.0
+offset_top = -20.0
+offset_right = 240.0
+offset_bottom = 20.0
+grow_vertical = 2

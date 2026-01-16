@@ -8,6 +8,7 @@
 [resource]
 script = ExtResource("1_apnyd")
 extra_time = 15.0
+name = "Tier 2 Factory"
 model = Array[PackedScene]([ExtResource("1_ga27o")])
 upgrades = Array[ExtResource("2_pophx")]([ExtResource("4_p4dsc")])
 upgrade_cost = 1500

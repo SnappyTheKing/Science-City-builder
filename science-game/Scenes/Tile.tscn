@@ -10,7 +10,7 @@ shader = ExtResource("2_iof5j")
 [sub_resource type="BoxMesh" id="BoxMesh_r4md0"]
 material = SubResource("ShaderMaterial_iof5j")
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_t0yj4"]
+[sub_resource type="HeightMapShape3D" id="HeightMapShape3D_iof5j"]
 
 [node name="Tile" type="Node3D"]
 script = ExtResource("1_t0yj4")
@@ -26,6 +26,9 @@ mesh = SubResource("BoxMesh_r4md0")
 skeleton = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
-shape = SubResource("BoxShape3D_t0yj4")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("HeightMapShape3D_iof5j")
 
 [connection signal="input_event" from="Ground" to="." method="_on_ground_input_event"]
+[connection signal="mouse_entered" from="Ground" to="." method="_on_ground_mouse_entered"]
+[connection signal="mouse_exited" from="Ground" to="." method="_on_ground_mouse_exited"]

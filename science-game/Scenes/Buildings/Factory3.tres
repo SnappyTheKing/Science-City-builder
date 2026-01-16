@@ -7,6 +7,7 @@
 [resource]
 script = ExtResource("1_qre2m")
 extra_time = 30.0
+name = "Nuclear Power Plant"
 model = Array[PackedScene]([ExtResource("1_52bef")])
 upgrade_cost = -1
 metadata/_custom_type_script = "uid://cb8jm0xa66ppo"

@@ -7,6 +7,7 @@
 [resource]
 script = ExtResource("1_axntf")
 discount = 25.0
+name = "National Monument"
 model = Array[PackedScene]([ExtResource("1_i7wss")])
 upgrade_cost = -1
 metadata/_custom_type_script = "uid://bfe0xkfi3chv6"

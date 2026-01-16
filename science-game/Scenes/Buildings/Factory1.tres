@@ -7,6 +7,7 @@
 
 [resource]
 script = ExtResource("1_7jpk1")
+name = "Tier 1 Factory"
 model = Array[PackedScene]([ExtResource("1_dpqet")])
 upgrades = Array[ExtResource("2_27psp")]([ExtResource("4_br8bg")])
 upgrade_cost = 100

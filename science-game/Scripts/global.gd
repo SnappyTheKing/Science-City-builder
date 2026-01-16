@@ -19,3 +19,18 @@ func count_all_stats():
 	for t in map:
 		if t.find_child("Structure").get_child_count():
 			t.find_child("Structure").get_child(0).count_stats()
+
+func enable_tooltip(b: Node3D):
+	#var t = load("res://Scenes/tooltip.tscn").instantiate()
+	
+	#get_tree().get_current_scene().add_child(t)
+	var t = get_tree().get_current_scene().find_child("Tooltip")
+	
+	t.type.text = b.building.name
+	
+	t.visible = true
+
+func disable_tooltip():
+	var t = get_tree().get_current_scene().find_child("Tooltip")
+	
+	t.visible = false

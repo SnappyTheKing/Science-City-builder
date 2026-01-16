@@ -23,3 +23,13 @@ func assign_type():
 	building.building = load("res://Scenes/Buildings/house.tres")
 	building.building.parent = building
 	$Structure.add_child(building)
+
+
+func _on_ground_mouse_entered() -> void:
+	if building:
+		Global.enable_tooltip(building)
+
+
+func _on_ground_mouse_exited() -> void:
+
+	Global.disable_tooltip()
