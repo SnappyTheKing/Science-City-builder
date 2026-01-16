@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://b7f0m2advcbck" path="res://Scripts/game.gd" id="1_iukft"]
 [ext_resource type="Script" uid="uid://diukjg6h42trn" path="res://Scripts/camera.gd" id="2_gl6un"]
 [ext_resource type="Script" uid="uid://ch6hog8ydb2oe" path="res://Scripts/label.gd" id="3_j5yw3"]
-[ext_resource type="PackedScene" uid="uid://0xb28axtdirx" path="res://Scenes/tooltip.tscn" id="4_kldst"]
+[ext_resource type="PackedScene" path="res://Scenes/tooltip.tscn" id="4_kldst"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gl6un"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -56,9 +56,6 @@ offset_right = -0.03201294
 offset_bottom = -0.15200806
 script = ExtResource("3_j5yw3")
 
-[node name="Tooltip" parent="." instance=ExtResource("4_kldst")]
-visible = false
-
 [node name="Water" type="StaticBody3D" parent="."]
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Water"]
@@ -68,3 +65,6 @@ skeleton = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Water"]
 shape = SubResource("HeightMapShape3D_kldst")
+
+[node name="Tooltip" parent="." instance=ExtResource("4_kldst")]
+visible = false

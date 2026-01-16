@@ -9,7 +9,8 @@ var costMult: float = 1
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	update()
-	count_stats()
+	Global.count_all_stats()
+	Global.enable_tooltip(self)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
@@ -32,11 +33,12 @@ func upgrade():
 	Global.money -= building.upgrade_cost * costMult
 	
 	var temp_parent = building.parent
-	building = building.upgrades[randi_range(0, len(building.upgrades)-1)]
+	building = building.upgrades[randi_range(0, len(building.upgrades)-1)].duplicate_deep()
 	building.parent = temp_parent
 	
 	update()
 	Global.count_all_stats()
+	Global.enable_tooltip(self)
 
 func count_stats():
 	moneyMult = 1
@@ -47,6 +49,6 @@ func count_stats():
 	
 	for b in Global.get_tiles(Vector2(get_parent().get_parent().position.x, get_parent().get_parent().position.z)):
 		if b.building is Store:
-			moneyMult += b.building.productivity/100
+			moneyMult *= 1 + b.building.productivity/100
 		if b.building is Park and building.upgrade_cost > 0:
 			costMult *= 1 - (b.building.discount/100)

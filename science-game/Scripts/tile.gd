@@ -20,7 +20,7 @@ func assign_type():
 	
 	building = building_scene.instantiate()
 	
-	building.building = load("res://Scenes/Buildings/house.tres")
+	building.building = load("res://Scenes/Buildings/house.tres").duplicate(true)
 	building.building.parent = building
 	$Structure.add_child(building)
 
