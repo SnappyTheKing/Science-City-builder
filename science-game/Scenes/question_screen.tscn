@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=3 uid="uid://btwhpdbutthlh"]
+
+[ext_resource type="Script" uid="uid://bctsf4rtljtgd" path="res://Scripts/Questions.gd" id="1_fdhha"]
+[ext_resource type="Resource" uid="uid://c15txbxjc2sje" path="res://Scenes/Questions/Chemistry_1.tres" id="2_ei6js"]
+
+[node name="Question_Screen" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_fdhha")
+question = ExtResource("2_ei6js")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="Spacing 1" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 0
+theme_override_constants/margin_right = 30
+
+[node name="PanelContainer" type="PanelContainer" parent="VBoxContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="QuestionName" type="RichTextLabel" parent="VBoxContainer/MarginContainer/PanelContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "Placeholder Question"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Spacing 2" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5
+
+[node name="AnswerMargin" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_right = 30
+
+[node name="QuestionHolder" type="GridContainer" parent="VBoxContainer/AnswerMargin"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+columns = 2
+
+[node name="Spacing 3" type="Control" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+size_flags_stretch_ratio = 0.5

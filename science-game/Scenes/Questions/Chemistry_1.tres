@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://c15txbxjc2sje"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_y6xdw"]
+
+[resource]
+script = ExtResource("1_y6xdw")
+question = "What is a molecule"
+answers = Array[String](["A particle of matter", "Yo mama", "Idk", "Sometime I write you letters that you'll never read"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"
