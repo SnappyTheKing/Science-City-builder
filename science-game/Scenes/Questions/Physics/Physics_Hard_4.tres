@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://bux66pvfhccjt"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_fcnmj"]
+
+[resource]
+script = ExtResource("1_fcnmj")
+question = "Which of these colors of visible light has the smallest wavelength?"
+answers = Array[String](["Periwinkle", "Quercitron", "Vermillion", "Quinacritone coral"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

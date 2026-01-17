@@ -10,7 +10,7 @@ func get_tiles(pos: Vector2) -> Array[Node3D]:
 	var list: Array[Node3D]
 	for t in map:
 		if t.find_child("Structure").get_child_count() and pos.distance_to(Vector2(t.position.x, t.position.z)) < 3 and pos != Vector2(t.position.x, t.position.z):
-			print("Structure Found")
+			#print("Structure Found")
 			list.append(t.find_child("Structure").get_child(0))
 	
 	return list
@@ -40,5 +40,12 @@ func disable_tooltip():
 
 func ask_question(t: Tile):
 	var q: QuestionScene = question_scene.instantiate()
+	var res: Building
+	
+	if t.find_child("Structure").get_child_count():
+		res = t.find_child("Structure").get_child(0).building.upgrades[t.find_child("Structure").get_child(0).chosen_upgrade]
+	else:
+		res = load("res://Scenes/Buildings/house.tres")
+	q.question = res.question_pack.questions[randi_range(0, len(res.question_pack.questions)-1)]
 	q.correct_answer.connect(t.assign_type)
 	get_tree().get_current_scene().add_child(q)

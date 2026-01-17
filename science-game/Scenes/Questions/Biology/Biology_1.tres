@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://dh8w4x8lw5hxx"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_5ei1v"]
+
+[resource]
+script = ExtResource("1_5ei1v")
+question = "Embryonic and Adult would be an example of what kind of cells:"
+answers = Array[String](["Stem cells", "Cancerous cells"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

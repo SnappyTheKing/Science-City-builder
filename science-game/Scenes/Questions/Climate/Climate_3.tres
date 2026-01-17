@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://dux4feueaaur8"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_lb8j6"]
+
+[resource]
+script = ExtResource("1_lb8j6")
+question = "To combat climate change we need to:"
+answers = Array[String](["Mitigate and adapt", "Mitigate", "Adapt", "Either 1 or 2"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://dfeyfhmd63syn"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_n8b8a"]
+
+[resource]
+script = ExtResource("1_n8b8a")
+question = "A converging lens with an object at 1f will show:"
+answers = Array[String](["No image", "A real image of the same size", "An image further away and bigger", "A virtual image on the opposite side"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

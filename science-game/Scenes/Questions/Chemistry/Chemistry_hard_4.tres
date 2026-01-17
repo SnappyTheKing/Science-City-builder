@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://d4nef0kjnpid1"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_pccif"]
+
+[resource]
+script = ExtResource("1_pccif")
+question = "Binary Acids include a polyatomic ion"
+answers = Array[String](["False", "True", "It's just computer code"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

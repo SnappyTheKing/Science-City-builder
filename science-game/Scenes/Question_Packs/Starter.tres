@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="QuestionPack" load_steps=15 format=3 uid="uid://bipb4upr0g61u"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_sycu2"]
+[ext_resource type="Resource" uid="uid://c15txbxjc2sje" path="res://Scenes/Questions/Chemistry/Chemistry_1.tres" id="2_86e67"]
+[ext_resource type="Script" uid="uid://125p03g7piwt" path="res://Scripts/Resources/Question_pack_class.gd" id="2_icbud"]
+[ext_resource type="Resource" uid="uid://eofpnsvpnn47" path="res://Scenes/Questions/Chemistry/Chemistry_10.tres" id="3_y4wr5"]
+[ext_resource type="Resource" uid="uid://c34y6dp55s4h8" path="res://Scenes/Questions/Chemistry/Chemistry_13.tres" id="4_73f4s"]
+[ext_resource type="Resource" uid="uid://clbyiq0vb0c20" path="res://Scenes/Questions/Biology/Biology_2.tres" id="5_cjp3r"]
+[ext_resource type="Resource" uid="uid://bjs78dn7r17ra" path="res://Scenes/Questions/Biology/Biology_6.tres" id="6_qgwh3"]
+[ext_resource type="Resource" uid="uid://bl5gkhw7t0u03" path="res://Scenes/Questions/Biology/Biology_13.tres" id="7_gf5y4"]
+[ext_resource type="Resource" uid="uid://c6tkeh3pjfeit" path="res://Scenes/Questions/Climate/Climate_1.tres" id="8_ygqgo"]
+[ext_resource type="Resource" uid="uid://rfx6sb8775aw" path="res://Scenes/Questions/Climate/Climate_8.tres" id="9_7iffl"]
+[ext_resource type="Resource" uid="uid://xd7ioyg2kmxx" path="res://Scenes/Questions/Climate/Climate_12.tres" id="10_q8gk7"]
+[ext_resource type="Resource" uid="uid://cjghwc0xyxcmn" path="res://Scenes/Questions/Physics/Physics_6.tres" id="11_ygqgo"]
+[ext_resource type="Resource" uid="uid://ceg1uvldxt4yq" path="res://Scenes/Questions/Physics/Physics_10.tres" id="12_qng0y"]
+[ext_resource type="Resource" uid="uid://by22rxliojql6" path="res://Scenes/Questions/Physics/Physics_15.tres" id="13_cke18"]
+
+[resource]
+script = ExtResource("2_icbud")
+questions = Array[ExtResource("1_sycu2")]([ExtResource("2_86e67"), ExtResource("3_y4wr5"), ExtResource("4_73f4s"), ExtResource("5_cjp3r"), ExtResource("6_qgwh3"), ExtResource("7_gf5y4"), ExtResource("8_ygqgo"), ExtResource("9_7iffl"), ExtResource("10_q8gk7"), ExtResource("11_ygqgo"), ExtResource("12_qng0y"), ExtResource("13_cke18")])
+metadata/_custom_type_script = "uid://125p03g7piwt"

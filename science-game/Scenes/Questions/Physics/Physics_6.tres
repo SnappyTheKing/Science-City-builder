@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://cjghwc0xyxcmn"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_5axob"]
+
+[resource]
+script = ExtResource("1_5axob")
+question = "Light travels from your eye to the object you see"
+answers = Array[String](["False", "True", "I have laser vision, so True ofc", "Nah, my eye sends probes out to tell me about the world"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

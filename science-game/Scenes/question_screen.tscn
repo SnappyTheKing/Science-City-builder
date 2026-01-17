@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://btwhpdbutthlh"]
 
 [ext_resource type="Script" uid="uid://bctsf4rtljtgd" path="res://Scripts/Questions.gd" id="1_fdhha"]
-[ext_resource type="Resource" uid="uid://c15txbxjc2sje" path="res://Scenes/Questions/Chemistry_1.tres" id="2_ei6js"]
+[ext_resource type="Resource" uid="uid://c15txbxjc2sje" path="res://Scenes/Questions/Chemistry/Chemistry_1.tres" id="2_ei6js"]
 
 [node name="Question_Screen" type="PanelContainer"]
 anchors_preset = 15

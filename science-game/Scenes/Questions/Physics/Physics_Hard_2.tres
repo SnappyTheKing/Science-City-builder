@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://dm20b1loy02pi"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_x1avt"]
+
+[resource]
+script = ExtResource("1_x1avt")
+question = "What is the speed of light in diamond?"
+answers = Array[String](["1.24 x10^8 m/s", "1.2 x10^8 s/m", "2.42 x10^8 m/s", "2.32 x10^8 s/m"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

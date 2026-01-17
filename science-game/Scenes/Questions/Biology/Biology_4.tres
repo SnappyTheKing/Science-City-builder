@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://mp7asub5i42"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_03rui"]
+
+[resource]
+script = ExtResource("1_03rui")
+question = "Cells are the smallest unit of __"
+answers = Array[String](["Life", "Matter", "Tissue", "Organs"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

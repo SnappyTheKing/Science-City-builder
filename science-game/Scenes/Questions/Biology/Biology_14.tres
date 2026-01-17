@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://dhuevkgpw0n2n"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_d84db"]
+
+[resource]
+script = ExtResource("1_d84db")
+question = "Other than glial cells, the brain is made of ____, which transmits chemical and ____ information in order to ____."
+answers = Array[String](["Neurons, electrical, communicate", "Brain, fun, party", "Neurons, digital, communicate", "Nerves, electrical, move"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

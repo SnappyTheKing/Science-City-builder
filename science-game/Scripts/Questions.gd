@@ -28,7 +28,6 @@ func _ready() -> void:
 		question_holder.add_child(i)
 
 func answerPressed(correct: bool):
-	print("clicked")
 	if correct:
 		correct_answer.emit()
 	queue_free()

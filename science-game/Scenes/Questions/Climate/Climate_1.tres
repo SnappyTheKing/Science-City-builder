@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://c6tkeh3pjfeit"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_d13rk"]
+
+[resource]
+script = ExtResource("1_d13rk")
+question = "Air conditioning is a ____ Feedback loop:"
+answers = Array[String](["Positive", "Negative"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="QuestionPack" load_steps=8 format=3 uid="uid://cdffg3702isks"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_pwhyv"]
+[ext_resource type="Script" uid="uid://125p03g7piwt" path="res://Scripts/Resources/Question_pack_class.gd" id="2_7e0bl"]
+[ext_resource type="Resource" uid="uid://d3geiym21iomw" path="res://Scenes/Questions/Physics/Physics_Hard_1.tres" id="2_lsnfw"]
+[ext_resource type="Resource" uid="uid://dm20b1loy02pi" path="res://Scenes/Questions/Physics/Physics_Hard_2.tres" id="3_3o6xd"]
+[ext_resource type="Resource" uid="uid://bngaiccputmuv" path="res://Scenes/Questions/Physics/Physics_Hard_3.tres" id="4_uiev1"]
+[ext_resource type="Resource" uid="uid://bux66pvfhccjt" path="res://Scenes/Questions/Physics/Physics_Hard_4.tres" id="5_r6a36"]
+[ext_resource type="Resource" uid="uid://dy6xyg5nqibqx" path="res://Scenes/Questions/Physics/Physics_Hard_5.tres" id="6_sxj4b"]
+
+[resource]
+script = ExtResource("2_7e0bl")
+questions = Array[ExtResource("1_pwhyv")]([ExtResource("2_lsnfw"), ExtResource("3_3o6xd"), ExtResource("4_uiev1"), ExtResource("5_r6a36"), ExtResource("6_sxj4b")])
+metadata/_custom_type_script = "uid://125p03g7piwt"

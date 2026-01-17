@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://b2vvh8sa5xqsh"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_0a0ds"]
+
+[resource]
+script = ExtResource("1_0a0ds")
+question = "What percentage of solar energy is reflected back into space?"
+answers = Array[String](["30%", "15%", "50%", "67%"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

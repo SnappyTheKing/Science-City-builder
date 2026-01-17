@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://bjs78dn7r17ra"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_82th4"]
+
+[resource]
+script = ExtResource("1_82th4")
+question = "Diffusion is the movement from areas of ___ concentration to ___"
+answers = Array[String](["High, Low", "Low, High", "High, Dense", "Medium, High"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

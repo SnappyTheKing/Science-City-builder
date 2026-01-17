@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://capbbhgiao63g"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_5yh1k"]
+
+[resource]
+script = ExtResource("1_5yh1k")
+question = "What is the name of the ionic compound KBr?"
+answers = Array[String](["Potassium bromide", "Krypton bromide", "Bromidic phosphide", "Bromine kryptide"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

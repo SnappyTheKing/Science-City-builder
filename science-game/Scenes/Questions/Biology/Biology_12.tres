@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://x43mieojx0kh"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_ci3i3"]
+
+[resource]
+script = ExtResource("1_ci3i3")
+question = "Arteries carry mainly oxygenated blood"
+answers = Array[String](["True", "False", "Arteries don’t carry blood"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

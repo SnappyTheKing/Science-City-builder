@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://bk1w65gh1r8fk"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_jdewy"]
+
+[resource]
+script = ExtResource("1_jdewy")
+question = "The process of cancer cells breaking away from the original (primary) tumour and establishing another (secondary) tumour elsewhere in the body"
+answers = Array[String](["Metastasis", "Carcinonization", "Cellular reproduction"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

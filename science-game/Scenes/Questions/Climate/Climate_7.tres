@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://db5rrryiw8vwb"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_r8s4w"]
+
+[resource]
+script = ExtResource("1_r8s4w")
+question = "Which of the following are NOT greenhouse gases?"
+answers = Array[String](["Nitrogen Dioxide", "Nitrogen", "Water", "Ozone"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

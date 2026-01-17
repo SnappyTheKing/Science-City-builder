@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://d2q6h0nig8w30"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_j8emw"]
+
+[resource]
+script = ExtResource("1_j8emw")
+question = "What kind of reaction is this? (Li + NaCl →LiCl + Na)"
+answers = Array[String](["Single-Replacement", "Synthesis", "Decomposition", "Combustion"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://cp22i3o6prd5o"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_wory7"]
+
+[resource]
+script = ExtResource("1_wory7")
+question = "At which stage of cell division does the cell become two distinct cells?"
+answers = Array[String](["Cytokinesis", "Telophase", "Mitosis", "Metaphase"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

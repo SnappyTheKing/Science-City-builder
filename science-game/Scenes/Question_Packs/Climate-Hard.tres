@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="QuestionPack" load_steps=8 format=3 uid="uid://onwwm866g501"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_1w4fo"]
+[ext_resource type="Resource" uid="uid://xa7vhvacx6eh" path="res://Scenes/Questions/Climate/Climate_Hard_1.tres" id="2_1tqve"]
+[ext_resource type="Resource" uid="uid://b2vvh8sa5xqsh" path="res://Scenes/Questions/Climate/Climate_Hard_2.tres" id="3_tdtfd"]
+[ext_resource type="Resource" uid="uid://chl80muqx8swd" path="res://Scenes/Questions/Climate/Climate_Hard_3.tres" id="4_rerae"]
+[ext_resource type="Resource" uid="uid://bistprsm5lai5" path="res://Scenes/Questions/Climate/Climate_Hard_4.tres" id="5_317mq"]
+[ext_resource type="Resource" uid="uid://cqcritknydebb" path="res://Scenes/Questions/Climate/Climate_Hard_5.tres" id="6_j0fi1"]
+[ext_resource type="Script" uid="uid://125p03g7piwt" path="res://Scripts/Resources/Question_pack_class.gd" id="7_xjk7f"]
+
+[resource]
+script = ExtResource("7_xjk7f")
+questions = Array[ExtResource("1_1w4fo")]([ExtResource("2_1tqve"), ExtResource("3_tdtfd"), ExtResource("4_rerae"), ExtResource("5_317mq"), ExtResource("6_j0fi1")])
+metadata/_custom_type_script = "uid://125p03g7piwt"

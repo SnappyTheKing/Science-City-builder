@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://bg2dai48a6q5i"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_gwffw"]
+
+[resource]
+script = ExtResource("1_gwffw")
+question = "What does LASER stand for?"
+answers = Array[String](["Light Amplification by Stimulated Emission of Radiation", "Leadership and Assistance for Science Education Reform", "the Light Aiming Systems in my Eyes are Rad", "Light Attitude and Synergy Emission Regulator"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

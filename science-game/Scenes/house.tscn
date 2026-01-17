@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://dwpag8uchjomc"]
+[gd_scene load_steps=5 format=3 uid="uid://dwpag8uchjomc"]
 
 [ext_resource type="Script" uid="uid://dceowduh476bp" path="res://Scripts/Resources/house_class.gd" id="2_3jr7h"]
+[ext_resource type="Script" uid="uid://cdflcmlgts2l2" path="res://Scripts/Resources/building_class.gd" id="2_n87ef"]
 
 [sub_resource type="GDScript" id="GDScript_okrnj"]
 script/source = "extends Node3D

@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="QuestionPack" load_steps=18 format=3 uid="uid://d0w2e45umae3m"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_uhrb4"]
+[ext_resource type="Script" uid="uid://125p03g7piwt" path="res://Scripts/Resources/Question_pack_class.gd" id="2_cj8ke"]
+[ext_resource type="Resource" uid="uid://nueucqkijnsv" path="res://Scenes/Questions/Physics/Physics_1.tres" id="2_vea4x"]
+[ext_resource type="Resource" uid="uid://66rbobukyijj" path="res://Scenes/Questions/Physics/Physics_2.tres" id="3_wln4u"]
+[ext_resource type="Resource" uid="uid://0mja5u3r8osu" path="res://Scenes/Questions/Physics/Physics_3.tres" id="4_i0cy0"]
+[ext_resource type="Resource" uid="uid://b504fifjbagu0" path="res://Scenes/Questions/Physics/Physics_4.tres" id="5_sfa2d"]
+[ext_resource type="Resource" uid="uid://cgnk4wg6fhwqw" path="res://Scenes/Questions/Physics/Physics_5.tres" id="6_5lxwg"]
+[ext_resource type="Resource" uid="uid://cjghwc0xyxcmn" path="res://Scenes/Questions/Physics/Physics_6.tres" id="7_qxm2r"]
+[ext_resource type="Resource" uid="uid://cgbg4bpgme7f8" path="res://Scenes/Questions/Physics/Physics_7.tres" id="8_aun61"]
+[ext_resource type="Resource" uid="uid://b1a81kaifajj" path="res://Scenes/Questions/Physics/Physics_8.tres" id="9_ykof4"]
+[ext_resource type="Resource" uid="uid://di0dy2j4xej5m" path="res://Scenes/Questions/Physics/Physics_9.tres" id="10_k2x5n"]
+[ext_resource type="Resource" uid="uid://ceg1uvldxt4yq" path="res://Scenes/Questions/Physics/Physics_10.tres" id="11_m5pp4"]
+[ext_resource type="Resource" uid="uid://dfeyfhmd63syn" path="res://Scenes/Questions/Physics/Physics_11.tres" id="12_o3mgg"]
+[ext_resource type="Resource" uid="uid://db7tead4xjtbq" path="res://Scenes/Questions/Physics/Physics_12.tres" id="13_5phtp"]
+[ext_resource type="Resource" uid="uid://bmh2hplt0xui2" path="res://Scenes/Questions/Physics/Physics_13.tres" id="14_ifyh8"]
+[ext_resource type="Resource" uid="uid://bg2dai48a6q5i" path="res://Scenes/Questions/Physics/Physics_14.tres" id="15_k4b7f"]
+[ext_resource type="Resource" uid="uid://by22rxliojql6" path="res://Scenes/Questions/Physics/Physics_15.tres" id="16_4i3w7"]
+
+[resource]
+script = ExtResource("2_cj8ke")
+questions = Array[ExtResource("1_uhrb4")]([ExtResource("2_vea4x"), ExtResource("3_wln4u"), ExtResource("4_i0cy0"), ExtResource("5_sfa2d"), ExtResource("6_5lxwg"), ExtResource("7_qxm2r"), ExtResource("8_aun61"), ExtResource("9_ykof4"), ExtResource("10_k2x5n"), ExtResource("11_m5pp4"), ExtResource("12_o3mgg"), ExtResource("13_5phtp"), ExtResource("14_ifyh8"), ExtResource("15_k4b7f"), ExtResource("16_4i3w7")])
+metadata/_custom_type_script = "uid://125p03g7piwt"

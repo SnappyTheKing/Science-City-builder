@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://cpufeajac4sy7"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_2b50t"]
+
+[resource]
+script = ExtResource("1_2b50t")
+question = "The liver produces:"
+answers = Array[String](["Bile", "Glucose", "Vili", "Amylase"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://b1a81kaifajj"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_djb5e"]
+
+[resource]
+script = ExtResource("1_djb5e")
+question = "A diverging lens’ image will always be"
+answers = Array[String](["Smaller", "Bigger", "The same size", "Kinda left"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

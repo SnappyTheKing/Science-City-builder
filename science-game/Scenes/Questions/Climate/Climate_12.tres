@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://xd7ioyg2kmxx"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_2foof"]
+
+[resource]
+script = ExtResource("1_2foof")
+question = "In a positive feedback loop, the initial change is ____ over time."
+answers = Array[String](["Amplified", "Reduced", "Consistent", "Happy"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

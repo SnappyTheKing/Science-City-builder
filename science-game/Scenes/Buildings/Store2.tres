@@ -1,15 +1,17 @@
-[gd_resource type="Resource" script_class="Store" load_steps=6 format=3 uid="uid://dd2mimpte3ho5"]
+[gd_resource type="Resource" script_class="Store" load_steps=7 format=3 uid="uid://dd2mimpte3ho5"]
 
 [ext_resource type="PackedScene" uid="uid://og8fg3mnoqxt" path="res://Assets/Comercial/building-k.glb" id="1_2tlm5"]
 [ext_resource type="Script" uid="uid://dch0b0d2j6tng" path="res://Scripts/Resources/store_class.gd" id="1_a55ny"]
 [ext_resource type="Script" uid="uid://cdflcmlgts2l2" path="res://Scripts/Resources/building_class.gd" id="2_cfxy2"]
 [ext_resource type="PackedScene" uid="uid://bl248652fcib8" path="res://Assets/Comercial/building-n.glb" id="2_exrfa"]
+[ext_resource type="Resource" uid="uid://c0h804j60n8lf" path="res://Scenes/Question_Packs/Chemistry.tres" id="3_exrfa"]
 [ext_resource type="Resource" uid="uid://l712yomm0v6s" path="res://Scenes/Buildings/Store3.tres" id="5_rrj2n"]
 
 [resource]
 script = ExtResource("1_a55ny")
 productivity = 15.0
 name = "Tier 2 Store"
+question_pack = ExtResource("3_exrfa")
 model = Array[PackedScene]([ExtResource("1_2tlm5"), ExtResource("2_exrfa")])
 upgrades = Array[ExtResource("2_cfxy2")]([ExtResource("5_rrj2n")])
 upgrade_cost = 2000

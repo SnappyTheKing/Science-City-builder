@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://cnbvir5up4pc1"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_e1xhw"]
+
+[resource]
+script = ExtResource("1_e1xhw")
+question = "Which of these is a property of bases?"
+answers = Array[String](["Does not react with metals", "Harmless", "Not conductive", "Tastes salty"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

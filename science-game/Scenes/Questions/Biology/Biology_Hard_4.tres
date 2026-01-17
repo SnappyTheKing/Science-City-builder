@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://lofcm7c5xvcm"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_4fcyu"]
+
+[resource]
+script = ExtResource("1_4fcyu")
+question = "The xylem transports water and minerals up and down throughout the plant"
+answers = Array[String](["False", "True", "The xylophone is a musical instrument, what on earth is it doing IN a plant"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

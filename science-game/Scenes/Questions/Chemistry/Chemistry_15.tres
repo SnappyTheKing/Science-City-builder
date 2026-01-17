@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://27sb46r0dq3p"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_cixkt"]
+
+[resource]
+script = ExtResource("1_cixkt")
+question = "What is the chemical equation for this word equation: Oxygen +  Methane → Water + Carbon dioxide"
+answers = Array[String]([" 4O + CH4 → 2H2O + CO2", "2O + CH → 2HO + CO"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://85oyr6g323gc"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_3u3tt"]
+
+[resource]
+script = ExtResource("1_3u3tt")
+question = "Involuntary movement that occurs in the digestive system:"
+answers = Array[String](["Perstalisis", "Osmosis", "Cryosis", "Metastasis"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

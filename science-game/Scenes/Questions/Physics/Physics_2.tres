@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://66rbobukyijj"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_8s0mv"]
+
+[resource]
+script = ExtResource("1_8s0mv")
+question = "The speed of light in a vacuum is:"
+answers = Array[String](["3.00 x 10^8m/s", "π x 10^8m/s", "8.00 x 10^3m/s"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

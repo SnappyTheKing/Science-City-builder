@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://xajyp1w78j02"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_xsskb"]
+
+[resource]
+script = ExtResource("1_xsskb")
+question = "Which of these is NOT a property of acid?"
+answers = Array[String](["Turns Litmus paper green", "Condusive", "Sour", "Conductive"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

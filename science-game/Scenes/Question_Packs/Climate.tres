@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="QuestionPack" load_steps=18 format=3 uid="uid://bo3l0t82eya0a"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_1vbq3"]
+[ext_resource type="Script" uid="uid://125p03g7piwt" path="res://Scripts/Resources/Question_pack_class.gd" id="2_gkavy"]
+[ext_resource type="Resource" uid="uid://c6tkeh3pjfeit" path="res://Scenes/Questions/Climate/Climate_1.tres" id="2_t3678"]
+[ext_resource type="Resource" uid="uid://b1m2b6lgumk7" path="res://Scenes/Questions/Climate/Climate_2.tres" id="3_tqblp"]
+[ext_resource type="Resource" uid="uid://dux4feueaaur8" path="res://Scenes/Questions/Climate/Climate_3.tres" id="4_1xh0j"]
+[ext_resource type="Resource" uid="uid://esrgbodxibwo" path="res://Scenes/Questions/Climate/Climate_4.tres" id="5_i2xxp"]
+[ext_resource type="Resource" uid="uid://bumvpxmpvwxg3" path="res://Scenes/Questions/Climate/Climate_5.tres" id="6_h30n3"]
+[ext_resource type="Resource" uid="uid://dmmo17u4iihis" path="res://Scenes/Questions/Climate/Climate_6.tres" id="7_804up"]
+[ext_resource type="Resource" uid="uid://db5rrryiw8vwb" path="res://Scenes/Questions/Climate/Climate_7.tres" id="8_lsvwe"]
+[ext_resource type="Resource" uid="uid://rfx6sb8775aw" path="res://Scenes/Questions/Climate/Climate_8.tres" id="9_byrvn"]
+[ext_resource type="Resource" uid="uid://bmuoc13mf04kl" path="res://Scenes/Questions/Climate/Climate_9.tres" id="10_ceu2r"]
+[ext_resource type="Resource" uid="uid://df5q7ljon1jqx" path="res://Scenes/Questions/Climate/Climate_10.tres" id="11_7bhgb"]
+[ext_resource type="Resource" uid="uid://dqqukjyjxybgx" path="res://Scenes/Questions/Climate/Climate_11.tres" id="12_bpui6"]
+[ext_resource type="Resource" uid="uid://xd7ioyg2kmxx" path="res://Scenes/Questions/Climate/Climate_12.tres" id="13_lytp4"]
+[ext_resource type="Resource" uid="uid://c3vceoka73l45" path="res://Scenes/Questions/Climate/Climate_13.tres" id="14_xulqd"]
+[ext_resource type="Resource" uid="uid://bv07dccph7dxe" path="res://Scenes/Questions/Climate/Climate_14.tres" id="15_3i2wg"]
+[ext_resource type="Resource" uid="uid://c5halqo4td03g" path="res://Scenes/Questions/Climate/Climate_15.tres" id="16_5w1ve"]
+
+[resource]
+script = ExtResource("2_gkavy")
+questions = Array[ExtResource("1_1vbq3")]([ExtResource("2_t3678"), ExtResource("3_tqblp"), ExtResource("4_1xh0j"), ExtResource("5_i2xxp"), ExtResource("6_h30n3"), ExtResource("7_804up"), ExtResource("8_lsvwe"), ExtResource("9_byrvn"), ExtResource("10_ceu2r"), ExtResource("11_7bhgb"), ExtResource("12_bpui6"), ExtResource("13_lytp4"), ExtResource("14_xulqd"), ExtResource("15_3i2wg"), ExtResource("16_5w1ve")])
+metadata/_custom_type_script = "uid://125p03g7piwt"

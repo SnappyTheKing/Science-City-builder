@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://dihy8711uc0vp"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_o7oqh"]
+
+[resource]
+script = ExtResource("1_o7oqh")
+question = "Fill in the blank: a _________ molecule is a with only two atoms"
+answers = Array[String](["Diatomic", "Polyatomic", "Compound", "Bitonic"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

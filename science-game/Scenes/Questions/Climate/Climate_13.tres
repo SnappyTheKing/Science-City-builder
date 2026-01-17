@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://c3vceoka73l45"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_0ifgh"]
+
+[resource]
+script = ExtResource("1_0ifgh")
+question = "A feedback loop is a relationship in which a(n) ____ also acts as a(n) _____."
+answers = Array[String](["Output, input", "Cat, dog", "Input, output", "Temperature, input"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

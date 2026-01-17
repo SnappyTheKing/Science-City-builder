@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://bistprsm5lai5"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_pf58w"]
+
+[resource]
+script = ExtResource("1_pf58w")
+question = "Which two processes always produce CO2?"
+answers = Array[String](["Combustion, cellular respiration", "Double replacement, cellular respiration", "Happiness, synthesis", "Synthesis, combustion"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://18uf3pq11c8a"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_swbcn"]
+
+[resource]
+script = ExtResource("1_swbcn")
+question = "During respiration ___ enters the blood, and ____ exits."
+answers = Array[String](["O2, CO2", "CO2, O2", "Magic, CO2", "O2, Magic"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

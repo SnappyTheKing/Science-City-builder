@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://3mcj6frhgrgw"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_ey44s"]
+
+[resource]
+script = ExtResource("1_ey44s")
+question = "What are the three types of plant tissue?"
+answers = Array[String](["Ground, vascular, epidermal", "Epidermal, skeletal, epithelial", "Epithelial, vascular, connective", "Vascular, ground, epithelial"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

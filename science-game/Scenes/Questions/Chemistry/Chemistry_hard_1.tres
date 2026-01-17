@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://cp1s8owde3rfu"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_wu2wv"]
+
+[resource]
+script = ExtResource("1_wu2wv")
+question = "The following is a ____ equation:  2NH4 + Cr2O7 → Cr2O3 + N2 + 4H2O+  Methane → Water + Carbon dioxide"
+answers = Array[String](["Decomposition", "Synthesis", "Double replacement", "Single Replacement"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://dmmo17u4iihis"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_dlxgh"]
+
+[resource]
+script = ExtResource("1_dlxgh")
+question = "“Urban neighborhoods can be over 10 degrees celsius warmer than nearby rural areas” is true because:"
+answers = Array[String](["Urban heat island effect", "Global warming", "Wildfire rates", "Surface albedo"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

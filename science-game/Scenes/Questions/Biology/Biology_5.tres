@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://crw7ksapkwfa3"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_8mgov"]
+
+[resource]
+script = ExtResource("1_8mgov")
+question = "What does the Pro- prefix mean in the context of cells?"
+answers = Array[String](["Before", "First", "Perfect", "Professional"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

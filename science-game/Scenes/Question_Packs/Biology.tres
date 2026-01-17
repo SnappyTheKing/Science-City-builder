@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="QuestionPack" load_steps=18 format=3 uid="uid://c3d2opnpmynq0"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_gmr0p"]
+[ext_resource type="Script" uid="uid://125p03g7piwt" path="res://Scripts/Resources/Question_pack_class.gd" id="2_0mwmp"]
+[ext_resource type="Resource" uid="uid://dh8w4x8lw5hxx" path="res://Scenes/Questions/Biology/Biology_1.tres" id="2_b8q6q"]
+[ext_resource type="Resource" uid="uid://clbyiq0vb0c20" path="res://Scenes/Questions/Biology/Biology_2.tres" id="3_0mti0"]
+[ext_resource type="Resource" uid="uid://cpufeajac4sy7" path="res://Scenes/Questions/Biology/Biology_3.tres" id="4_qe1ci"]
+[ext_resource type="Resource" uid="uid://mp7asub5i42" path="res://Scenes/Questions/Biology/Biology_4.tres" id="5_hxn54"]
+[ext_resource type="Resource" uid="uid://crw7ksapkwfa3" path="res://Scenes/Questions/Biology/Biology_5.tres" id="6_4w00x"]
+[ext_resource type="Resource" uid="uid://bjs78dn7r17ra" path="res://Scenes/Questions/Biology/Biology_6.tres" id="7_vx2dn"]
+[ext_resource type="Resource" uid="uid://dx0dw65p4t578" path="res://Scenes/Questions/Biology/Biology_7.tres" id="8_8832r"]
+[ext_resource type="Resource" uid="uid://cp22i3o6prd5o" path="res://Scenes/Questions/Biology/Biology_8.tres" id="9_sq37s"]
+[ext_resource type="Resource" uid="uid://brsdj88bnnr3b" path="res://Scenes/Questions/Biology/Biology_9.tres" id="10_hbve2"]
+[ext_resource type="Resource" uid="uid://18uf3pq11c8a" path="res://Scenes/Questions/Biology/Biology_10.tres" id="11_dfn0x"]
+[ext_resource type="Resource" uid="uid://bl5gkhw7t0u03" path="res://Scenes/Questions/Biology/Biology_11.tres" id="12_ux7u5"]
+[ext_resource type="Resource" uid="uid://x43mieojx0kh" path="res://Scenes/Questions/Biology/Biology_12.tres" id="13_ocl2a"]
+[ext_resource type="Resource" uid="uid://w51b5n8ey2w7" path="res://Scenes/Questions/Biology/Biology_13.tres" id="14_qofpl"]
+[ext_resource type="Resource" uid="uid://dhuevkgpw0n2n" path="res://Scenes/Questions/Biology/Biology_14.tres" id="15_u2ge0"]
+[ext_resource type="Resource" uid="uid://3mcj6frhgrgw" path="res://Scenes/Questions/Biology/Biology_15.tres" id="16_7varw"]
+
+[resource]
+script = ExtResource("2_0mwmp")
+questions = Array[ExtResource("1_gmr0p")]([ExtResource("2_b8q6q"), ExtResource("3_0mti0"), ExtResource("4_qe1ci"), ExtResource("5_hxn54"), ExtResource("6_4w00x"), ExtResource("7_vx2dn"), ExtResource("8_8832r"), ExtResource("9_sq37s"), ExtResource("10_hbve2"), ExtResource("11_dfn0x"), ExtResource("12_ux7u5"), ExtResource("13_ocl2a"), ExtResource("14_qofpl"), ExtResource("15_u2ge0"), ExtResource("16_7varw")])
+metadata/_custom_type_script = "uid://125p03g7piwt"

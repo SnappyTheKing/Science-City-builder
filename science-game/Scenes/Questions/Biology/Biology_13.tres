@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://w51b5n8ey2w7"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_eq8ss"]
+
+[resource]
+script = ExtResource("1_eq8ss")
+question = "The main purpose of the circulatory system is _____."
+answers = Array[String](["Transportation", "Communication", "It has no purpose", "Digestion"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

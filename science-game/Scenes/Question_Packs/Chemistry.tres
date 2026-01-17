@@ -1,0 +1,24 @@
+[gd_resource type="Resource" script_class="QuestionPack" load_steps=18 format=3 uid="uid://c0h804j60n8lf"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_t6wcb"]
+[ext_resource type="Script" uid="uid://125p03g7piwt" path="res://Scripts/Resources/Question_pack_class.gd" id="2_pkjh7"]
+[ext_resource type="Resource" uid="uid://c15txbxjc2sje" path="res://Scenes/Questions/Chemistry/Chemistry_1.tres" id="2_vvkyu"]
+[ext_resource type="Resource" uid="uid://cbbf4o3gcb6j" path="res://Scenes/Questions/Chemistry/Chemistry_2.tres" id="3_baapi"]
+[ext_resource type="Resource" uid="uid://bmw2i7b8y75v3" path="res://Scenes/Questions/Chemistry/Chemistry_3.tres" id="4_1o08s"]
+[ext_resource type="Resource" uid="uid://capbbhgiao63g" path="res://Scenes/Questions/Chemistry/Chemistry_4.tres" id="5_p6iqe"]
+[ext_resource type="Resource" uid="uid://cvsm08ppahvkp" path="res://Scenes/Questions/Chemistry/Chemistry_5.tres" id="6_sfq7t"]
+[ext_resource type="Resource" uid="uid://c0arom16kwo8k" path="res://Scenes/Questions/Chemistry/Chemistry_6.tres" id="7_y5opk"]
+[ext_resource type="Resource" uid="uid://d2q6h0nig8w30" path="res://Scenes/Questions/Chemistry/Chemistry_7.tres" id="8_eqnc1"]
+[ext_resource type="Resource" uid="uid://cnbvir5up4pc1" path="res://Scenes/Questions/Chemistry/Chemistry_8.tres" id="9_xn6vd"]
+[ext_resource type="Resource" uid="uid://dw3tfmg54e65g" path="res://Scenes/Questions/Chemistry/Chemistry_9.tres" id="10_jiuc3"]
+[ext_resource type="Resource" uid="uid://eofpnsvpnn47" path="res://Scenes/Questions/Chemistry/Chemistry_10.tres" id="11_88gy4"]
+[ext_resource type="Resource" uid="uid://pq1x88njg47f" path="res://Scenes/Questions/Chemistry/Chemistry_11.tres" id="12_x2lw2"]
+[ext_resource type="Resource" uid="uid://dihy8711uc0vp" path="res://Scenes/Questions/Chemistry/Chemistry_12.tres" id="13_07370"]
+[ext_resource type="Resource" uid="uid://c34y6dp55s4h8" path="res://Scenes/Questions/Chemistry/Chemistry_13.tres" id="14_4f1il"]
+[ext_resource type="Resource" uid="uid://c7qm6ewgofrpd" path="res://Scenes/Questions/Chemistry/Chemistry_14.tres" id="15_pkk1h"]
+[ext_resource type="Resource" uid="uid://27sb46r0dq3p" path="res://Scenes/Questions/Chemistry/Chemistry_15.tres" id="16_islxj"]
+
+[resource]
+script = ExtResource("2_pkjh7")
+questions = Array[ExtResource("1_t6wcb")]([ExtResource("2_vvkyu"), ExtResource("3_baapi"), ExtResource("4_1o08s"), ExtResource("5_p6iqe"), ExtResource("6_sfq7t"), ExtResource("7_y5opk"), ExtResource("8_eqnc1"), ExtResource("9_xn6vd"), ExtResource("10_jiuc3"), ExtResource("11_88gy4"), ExtResource("12_x2lw2"), ExtResource("13_07370"), ExtResource("14_4f1il"), ExtResource("15_pkk1h"), ExtResource("16_islxj")])
+metadata/_custom_type_script = "uid://125p03g7piwt"

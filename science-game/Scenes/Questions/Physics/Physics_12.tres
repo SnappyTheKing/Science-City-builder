@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://db7tead4xjtbq"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_xotwf"]
+
+[resource]
+script = ExtResource("1_xotwf")
+question = "Snail’s Law (n1sinθ1 = n2sinθ2) is used to determine the angle of refraction"
+answers = Array[String](["True", "False", "I do math in decimals because I don’t like fractions"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

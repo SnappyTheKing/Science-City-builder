@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://bumvpxmpvwxg3"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_dpeqy"]
+
+[resource]
+script = ExtResource("1_dpeqy")
+question = "Ocean Acidification is caused by:"
+answers = Array[String](["Carbonic acid", "Carbon dioxide"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

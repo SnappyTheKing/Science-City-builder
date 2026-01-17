@@ -6,6 +6,8 @@ var building: Building
 var moneyMult: float = 1
 var costMult: float = 1
 
+var chosen_upgrade: int
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	update()
@@ -27,14 +29,16 @@ func set_mesh():
 	var selected = building.model[randi_range(0, len(building.model)-1)].instantiate()
 	add_child(selected)
 
-func upgrade():
+func buy_upgrade() -> bool:
 	if (building.upgrade_cost < 0 or Global.money < building.upgrade_cost*costMult):
-		return
+		return false
 	Global.money -= building.upgrade_cost * costMult
+	return true
+
+func upgrade():
 	
-	var temp_parent = building.parent
-	building = building.upgrades[randi_range(0, len(building.upgrades)-1)].duplicate_deep()
-	building.parent = temp_parent
+	building = building.upgrades[chosen_upgrade].duplicate_deep()
+	building.parent = self
 	
 	update()
 	Global.count_all_stats()

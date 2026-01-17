@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://cgnk4wg6fhwqw"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_cv7ek"]
+
+[resource]
+script = ExtResource("1_cv7ek")
+question = "Diffuse reflection is:"
+answers = Array[String](["Reflection of a rougher surface", "When a bomb is in a mirror", "Reflection of a smoother surface", "Reflection in water"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

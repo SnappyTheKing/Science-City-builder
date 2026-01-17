@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://pq1x88njg47f"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_hjlu6"]
+
+[resource]
+script = ExtResource("1_hjlu6")
+question = "A Lewis Diagram:"
+answers = Array[String](["Shows the sharing of atoms in a covalent compound. ", "Shows the transfer of atoms in an ionic compound.", "Shows the number of valent electrons from a molecule."])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

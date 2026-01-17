@@ -1,7 +1,8 @@
-[gd_resource type="Resource" script_class="Factory" load_steps=5 format=3 uid="uid://cbngqeismtlsr"]
+[gd_resource type="Resource" script_class="Factory" load_steps=6 format=3 uid="uid://cbngqeismtlsr"]
 
 [ext_resource type="Script" uid="uid://cb8jm0xa66ppo" path="res://Scripts/Resources/factory_class.gd" id="1_apnyd"]
 [ext_resource type="PackedScene" uid="uid://dmda04h66f5wg" path="res://Assets/Industrial/building-m.glb" id="1_ga27o"]
+[ext_resource type="Resource" uid="uid://d0w2e45umae3m" path="res://Scenes/Question_Packs/Physics.tres" id="2_p4dsc"]
 [ext_resource type="Script" uid="uid://cdflcmlgts2l2" path="res://Scripts/Resources/building_class.gd" id="2_pophx"]
 [ext_resource type="Resource" uid="uid://1d5nhneeflin" path="res://Scenes/Buildings/Factory3.tres" id="4_p4dsc"]
 
@@ -9,6 +10,7 @@
 script = ExtResource("1_apnyd")
 extra_time = 15.0
 name = "Tier 2 Factory"
+question_pack = ExtResource("2_p4dsc")
 model = Array[PackedScene]([ExtResource("1_ga27o")])
 upgrades = Array[ExtResource("2_pophx")]([ExtResource("4_p4dsc")])
 upgrade_cost = 1500

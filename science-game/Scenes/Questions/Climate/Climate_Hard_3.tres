@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://chl80muqx8swd"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_qkhod"]
+
+[resource]
+script = ExtResource("1_qkhod")
+question = "What percent of extra heat from human caused greenhouse effect has the ocean absorbed?"
+answers = Array[String](["76-100%", "0-25%", "51-75%", "67%"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

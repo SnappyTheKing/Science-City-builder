@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://ceg1uvldxt4yq"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_mgw8k"]
+
+[resource]
+script = ExtResource("1_mgw8k")
+question = "The color of your iris affects your perception of colors"
+answers = Array[String](["False", "True", "I’m colorblind…"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

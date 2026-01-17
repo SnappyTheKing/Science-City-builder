@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="QuestionPack" load_steps=8 format=3 uid="uid://dxcbl0u4t6ii0"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_hdblf"]
+[ext_resource type="Resource" uid="uid://85oyr6g323gc" path="res://Scenes/Questions/Biology/Biology_Hard_1.tres" id="2_ri1sj"]
+[ext_resource type="Script" uid="uid://125p03g7piwt" path="res://Scripts/Resources/Question_pack_class.gd" id="2_tog5c"]
+[ext_resource type="Resource" uid="uid://bdds7t8wxmtv7" path="res://Scenes/Questions/Biology/Biology_Hard_2.tres" id="3_nngfb"]
+[ext_resource type="Resource" uid="uid://bgrlfpvxvrsh" path="res://Scenes/Questions/Biology/Biology_Hard_3.tres" id="4_po8jv"]
+[ext_resource type="Resource" uid="uid://lofcm7c5xvcm" path="res://Scenes/Questions/Biology/Biology_Hard_4.tres" id="5_snum7"]
+[ext_resource type="Resource" uid="uid://bk1w65gh1r8fk" path="res://Scenes/Questions/Biology/Biology_Hard_5.tres" id="6_x52ri"]
+
+[resource]
+script = ExtResource("2_tog5c")
+questions = Array[ExtResource("1_hdblf")]([ExtResource("2_ri1sj"), ExtResource("3_nngfb"), ExtResource("4_po8jv"), ExtResource("5_snum7"), ExtResource("6_x52ri")])
+metadata/_custom_type_script = "uid://125p03g7piwt"

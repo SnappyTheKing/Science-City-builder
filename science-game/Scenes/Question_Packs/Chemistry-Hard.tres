@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="QuestionPack" load_steps=8 format=3 uid="uid://be840pnskgoil"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_0q8tg"]
+[ext_resource type="Resource" uid="uid://cp1s8owde3rfu" path="res://Scenes/Questions/Chemistry/Chemistry_hard_1.tres" id="2_wf1ek"]
+[ext_resource type="Script" uid="uid://125p03g7piwt" path="res://Scripts/Resources/Question_pack_class.gd" id="2_wqh7q"]
+[ext_resource type="Resource" uid="uid://35lje0ocnb6g" path="res://Scenes/Questions/Chemistry/Chemistry_hard_2.tres" id="3_is0jl"]
+[ext_resource type="Resource" uid="uid://drkichiacgpqr" path="res://Scenes/Questions/Chemistry/Chemistry_hard_3.tres" id="4_bfvne"]
+[ext_resource type="Resource" uid="uid://d4nef0kjnpid1" path="res://Scenes/Questions/Chemistry/Chemistry_hard_4.tres" id="5_wj4wf"]
+[ext_resource type="Resource" uid="uid://xajyp1w78j02" path="res://Scenes/Questions/Chemistry/Chemistry_hard_5.tres" id="6_4s15p"]
+
+[resource]
+script = ExtResource("2_wqh7q")
+questions = Array[ExtResource("1_0q8tg")]([ExtResource("2_wf1ek"), ExtResource("3_is0jl"), ExtResource("4_bfvne"), ExtResource("5_wj4wf"), ExtResource("6_4s15p")])
+metadata/_custom_type_script = "uid://125p03g7piwt"

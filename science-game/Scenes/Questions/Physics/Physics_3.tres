@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://0mja5u3r8osu"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_kridj"]
+
+[resource]
+script = ExtResource("1_kridj")
+question = "Which is not an example of total internal refraction:"
+answers = Array[String](["Difference between true depth and apparent depth of an object in water", "Sparkling of diamonds", "Inferior mirages ", "Binoculars"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

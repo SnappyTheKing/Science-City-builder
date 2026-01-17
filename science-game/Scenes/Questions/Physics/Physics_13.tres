@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://bmh2hplt0xui2"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_n0s0j"]
+
+[resource]
+script = ExtResource("1_n0s0j")
+question = "Total internal reflection occurs when ____"
+answers = Array[String](["Moving from a slower medium to a faster one", "Someone is very self absorbed", "Moving from a faster medium to a slower one", "It doesn’t occur"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

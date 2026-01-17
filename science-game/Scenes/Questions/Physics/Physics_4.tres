@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://b504fifjbagu0"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_2jrfm"]
+
+[resource]
+script = ExtResource("1_2jrfm")
+question = "Convex lenses cause light to ____, concave lenses cause light to ___."
+answers = Array[String](["Converge, diverge", "Diverge, converge"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://b1m2b6lgumk7"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_pacx6"]
+
+[resource]
+script = ExtResource("1_pacx6")
+question = "The average albedo of earth from the upper atmosphere is:"
+answers = Array[String](["0.3", "0.5", "0.7", "0.1"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

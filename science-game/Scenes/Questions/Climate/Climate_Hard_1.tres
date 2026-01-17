@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://xa7vhvacx6eh"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_xmpp8"]
+
+[resource]
+script = ExtResource("1_xmpp8")
+question = "The heat capacity of water is __ that of air"
+answers = Array[String](["4x", "2x", "0.7x", "5x"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

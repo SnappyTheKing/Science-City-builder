@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://dy6xyg5nqibqx"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_6tx62"]
+
+[resource]
+script = ExtResource("1_6tx62")
+question = "Given that the speed of light in crown glass is 1.97 x10^8 m/s, what is the angle of refraction (to the nearest degree) of a ray of light which is travelling from water into crown glass at an angle of incidence of 30 deg?"
+answers = Array[String](["~26 deg", "~24 deg", "~33 deg", "~36 deg"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

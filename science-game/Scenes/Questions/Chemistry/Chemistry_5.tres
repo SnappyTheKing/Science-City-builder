@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://cvsm08ppahvkp"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_0fb27"]
+
+[resource]
+script = ExtResource("1_0fb27")
+question = "The formula for the multivalent compound Americum (VI) Sulphate is Am(SO4)3"
+answers = Array[String](["True", "False", "America isn’t real and this is therefore question is invalid"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"

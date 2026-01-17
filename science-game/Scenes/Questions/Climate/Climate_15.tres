@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="Question" load_steps=2 format=3 uid="uid://c5halqo4td03g"]
+
+[ext_resource type="Script" uid="uid://bplkqvagqe0vj" path="res://Scripts/Resources/question_class.gd" id="1_qlbw6"]
+
+[resource]
+script = ExtResource("1_qlbw6")
+question = "As the ocean warms, the oxygenation of the ocean is increasing"
+answers = Array[String](["False", "True", "The ocean is getting colder"])
+metadata/_custom_type_script = "uid://bplkqvagqe0vj"
