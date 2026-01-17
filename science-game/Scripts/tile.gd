@@ -11,7 +11,7 @@ func _ready() -> void:
 func _on_ground_input_event(_camera: Node, event: InputEvent, _event_position: Vector3, _normal: Vector3, _shape_idx: int) -> void:
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed and position.y > 0:
-			assign_type()
+			Global.ask_question(self)
 
 func assign_type():
 	if ($Structure.get_child_count()):

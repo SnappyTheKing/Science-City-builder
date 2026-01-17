@@ -4,6 +4,7 @@ var money = 0
 var time = 300
 var map: Array[Tile]
 
+var question_scene = preload("res://Scenes/question_screen.tscn")
 
 func get_tiles(pos: Vector2) -> Array[Node3D]:
 	var list: Array[Node3D]
@@ -36,3 +37,8 @@ func disable_tooltip():
 	var t = get_tree().get_current_scene().find_child("Tooltip")
 	
 	t.visible = false
+
+func ask_question(t: Tile):
+	var q: QuestionScene = question_scene.instantiate()
+	q.correct_answer.connect(t.assign_type)
+	get_tree().get_current_scene().add_child(q)

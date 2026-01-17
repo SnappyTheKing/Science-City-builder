@@ -18,7 +18,7 @@ func _process(_delta: float) -> void:
 
 func update():
 	for node in get_children():
-		remove_child(node)
+		node.queue_free()
 	set_mesh()
 	building.run()
 	

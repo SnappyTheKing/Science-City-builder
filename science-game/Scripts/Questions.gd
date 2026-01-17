@@ -1,4 +1,5 @@
 extends PanelContainer
+class_name  QuestionScene
 
 signal correct_answer
 
@@ -12,12 +13,22 @@ var answer_scene: PackedScene = load("res://Scenes/Answer.tscn")
 func _ready() -> void:
 	question_name.text = question.question
 	
+	var t: Array
 	
-	for a in question.answers:
-		var t = answer_scene.instantiate()
-		t.text = a
-		t.pressed.connect(answerPressed)
-		question_holder.add_child(t)
+	for a in range(len(question.answers)):
+		t.append(answer_scene.instantiate())
+		t[a].text = question.answers[a]
+		t[a].parent = self
+		if a == 0:
+			t[a].correct = true
+	
+	t.shuffle()
+	
+	for i in t:
+		question_holder.add_child(i)
 
-func answerPressed():
+func answerPressed(correct: bool):
 	print("clicked")
+	if correct:
+		correct_answer.emit()
+	queue_free()

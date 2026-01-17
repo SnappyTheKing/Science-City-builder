@@ -1,6 +1,11 @@
-[gd_scene format=3 uid="uid://c1r3xdu55ygl0"]
+[gd_scene load_steps=2 format=3 uid="uid://c1r3xdu55ygl0"]
+
+[ext_resource type="Script" uid="uid://cag8lyh67mv55" path="res://Scenes/Answer.gd" id="1_k2tbb"]
 
 [node name="Answer" type="Button"]
 size_flags_horizontal = 3
 size_flags_vertical = 3
 text = "Answer"
+script = ExtResource("1_k2tbb")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]
