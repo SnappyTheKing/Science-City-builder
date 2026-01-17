@@ -16,7 +16,6 @@ func _ready() -> void:
 	for a in question.answers:
 		var t = answer_scene.instantiate()
 		t.text = a
-		t.Correct = true
 		t.pressed.connect(answerPressed)
 		question_holder.add_child(t)
 
