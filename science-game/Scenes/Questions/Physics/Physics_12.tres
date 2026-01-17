@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_xotwf")
-question = "Snail’s Law (n1sinθ1 = n2sinθ2) is used to determine the angle of refraction"
+question = "Snell’s Law (n1sinθ1 = n2sinθ2) is used to determine the angle of refraction"
 answers = Array[String](["True", "False", "I do math in decimals because I don’t like fractions"])
 metadata/_custom_type_script = "uid://bplkqvagqe0vj"

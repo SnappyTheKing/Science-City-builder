@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_qkhod")
 question = "What percent of extra heat from human caused greenhouse effect has the ocean absorbed?"
-answers = Array[String](["76-100%", "0-25%", "51-75%", "67%"])
+answers = Array[String](["76-100%", "0-25%", "51-75%", "25-50%"])
 metadata/_custom_type_script = "uid://bplkqvagqe0vj"
