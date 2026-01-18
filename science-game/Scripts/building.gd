@@ -11,6 +11,7 @@ var chosen_upgrade: int
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	update()
+	rotate_y(randi_range(0, 3) * PI/2)
 	Global.count_all_stats()
 	Global.enable_tooltip(self)
 

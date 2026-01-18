@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="Park" load_steps=5 format=3 uid="uid://wxp50qekwq7s"]
 
 [ext_resource type="Script" uid="uid://bfe0xkfi3chv6" path="res://Scripts/Resources/park_class.gd" id="1_axntf"]
-[ext_resource type="PackedScene" uid="uid://cfuupj2yy16yk" path="res://Assets/Residential/planter.glb" id="1_i7wss"]
+[ext_resource type="PackedScene" uid="uid://bfdy5c3frii3c" path="res://Assets/Customs/monument.tscn" id="1_sla31"]
 [ext_resource type="Script" uid="uid://cdflcmlgts2l2" path="res://Scripts/Resources/building_class.gd" id="2_i7wss"]
 [ext_resource type="Resource" uid="uid://dxcbl0u4t6ii0" path="res://Scenes/Question_Packs/Biology-Hard.tres" id="2_sla31"]
 
@@ -10,6 +10,6 @@ script = ExtResource("1_axntf")
 discount = 25.0
 name = "National Monument"
 question_pack = ExtResource("2_sla31")
-model = Array[PackedScene]([ExtResource("1_i7wss")])
+model = Array[PackedScene]([ExtResource("1_sla31")])
 upgrade_cost = -1
 metadata/_custom_type_script = "uid://bfe0xkfi3chv6"

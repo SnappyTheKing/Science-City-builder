@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://dovr1ulyixmgk" path="res://Assets/Comercial/building-skyscraper-d.glb" id="2_r0dc0"]
 [ext_resource type="Script" uid="uid://cdflcmlgts2l2" path="res://Scripts/Resources/building_class.gd" id="2_rxpk3"]
 [ext_resource type="PackedScene" uid="uid://cm5xabau0u6ts" path="res://Assets/Comercial/building-skyscraper-e.glb" id="3_01a08"]
-[ext_resource type="Resource" uid="uid://onwwm866g501" path="res://Scenes/Question_Packs/Climate-Hard.tres" id="4_r0dc0"]
+[ext_resource type="Resource" uid="uid://be840pnskgoil" path="res://Scenes/Question_Packs/Chemistry-Hard.tres" id="4_r0dc0"]
 
 [resource]
 script = ExtResource("1_paq1i")

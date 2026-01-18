@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Factory" load_steps=5 format=3 uid="uid://1d5nhneeflin"]
 
-[ext_resource type="PackedScene" uid="uid://dbnu0up6q802h" path="res://Assets/Nuclear.tscn" id="1_52bef"]
+[ext_resource type="PackedScene" uid="uid://dbnu0up6q802h" path="res://Assets/Customs/Nuclear.tscn" id="1_52bef"]
 [ext_resource type="Script" uid="uid://cb8jm0xa66ppo" path="res://Scripts/Resources/factory_class.gd" id="1_qre2m"]
 [ext_resource type="Resource" uid="uid://cdffg3702isks" path="res://Scenes/Question_Packs/Physics-Hard.tres" id="2_0h3wa"]
 [ext_resource type="Script" uid="uid://cdflcmlgts2l2" path="res://Scripts/Resources/building_class.gd" id="2_52bef"]

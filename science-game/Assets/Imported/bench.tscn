@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bi1338muntm2f"]
+
+[ext_resource type="ArrayMesh" uid="uid://c5tt57g0qimbw" path="res://Assets/Imported/16452_WoodenBench_NEW.obj" id="1_k7puw"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aju5g"]
+albedo_color = Color(0.6365158, 0.3788608, 0.17032999, 1)
+
+[node name="16452WoodenBenchNew" type="MeshInstance3D"]
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, 1, 0, -1, -4.371139e-08, 0, 0, 0)
+mesh = ExtResource("1_k7puw")
+surface_material_override/0 = SubResource("StandardMaterial3D_aju5g")

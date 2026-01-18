@@ -2,10 +2,12 @@ extends Node
 
 var money = 0
 
-var time = 300
+var time = 310
 var bonus_time = 0
 
 var map: Array[Tile]
+
+var odds: Array[int] = [0, 0, 0, 0, 0, 1, 1, 1, 2, 2, 2, 3, 3]
 
 var question_scene = preload("res://Scenes/question_screen.tscn")
 

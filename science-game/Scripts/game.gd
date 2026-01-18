@@ -2,7 +2,7 @@ extends Node3D
 
 
 var tile = preload("res://Scenes/Tile.tscn")
-var noise = FastNoiseLite.new()
+@export var noise = FastNoiseLite.new()
 
 func _ready() -> void:
 	print("Game Started")

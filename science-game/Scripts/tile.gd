@@ -14,7 +14,11 @@ func _on_ground_input_event(_camera: Node, event: InputEvent, _event_position: V
 	if event is InputEventMouseButton:
 		if event.button_index == MOUSE_BUTTON_LEFT and event.pressed and position.y > 0:
 			if($Structure.get_child_count()):
-				building.chosen_upgrade = randi_range(0, len(building.building.upgrades)-1)
+				if len(building.building.upgrades) == 1:
+					building.chosen_upgrade = 0
+				else:
+					building.chosen_upgrade = Global.odds[randi_range(0, len(Global.odds)-1)]
+				
 				if not building.buy_upgrade():
 					return
 			Global.ask_question(self)

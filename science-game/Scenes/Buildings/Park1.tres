@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="Park" load_steps=6 format=3 uid="uid://c88acopjpyj32"]
 
 [ext_resource type="Script" uid="uid://bfe0xkfi3chv6" path="res://Scripts/Resources/park_class.gd" id="1_kv6uf"]
-[ext_resource type="PackedScene" uid="uid://bbq3qb466mntj" path="res://Assets/Residential/tree-small.glb" id="1_v4c67"]
+[ext_resource type="PackedScene" uid="uid://bqth1i1nu6ca1" path="res://Assets/Customs/Small-Park.tscn" id="1_vopkk"]
 [ext_resource type="Script" uid="uid://cdflcmlgts2l2" path="res://Scripts/Resources/building_class.gd" id="2_6rekf"]
 [ext_resource type="Resource" uid="uid://c3d2opnpmynq0" path="res://Scenes/Question_Packs/Biology.tres" id="2_vopkk"]
 [ext_resource type="Resource" uid="uid://kggcv7hhgwxt" path="res://Scenes/Buildings/Park2.tres" id="4_vopkk"]
@@ -10,7 +10,7 @@
 script = ExtResource("1_kv6uf")
 name = "Small Park"
 question_pack = ExtResource("2_vopkk")
-model = Array[PackedScene]([ExtResource("1_v4c67")])
+model = Array[PackedScene]([ExtResource("1_vopkk")])
 upgrades = Array[ExtResource("2_6rekf")]([ExtResource("4_vopkk")])
 upgrade_cost = 50
 metadata/_custom_type_script = "uid://bfe0xkfi3chv6"
