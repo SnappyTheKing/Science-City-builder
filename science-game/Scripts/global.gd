@@ -1,7 +1,10 @@
 extends Node
 
 var money = 0
+
 var time = 300
+var bonus_time = 0
+
 var map: Array[Tile]
 
 var question_scene = preload("res://Scenes/question_screen.tscn")
@@ -16,7 +19,7 @@ func get_tiles(pos: Vector2) -> Array[Node3D]:
 	return list
 
 func count_all_stats():
-	time = 300
+	bonus_time = 0
 	for t in map:
 		if t.find_child("Structure").get_child_count():
 			t.find_child("Structure").get_child(0).count_stats()

@@ -1,7 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://pkyo6bj8p7qp"]
+[gd_scene load_steps=7 format=3 uid="uid://pkyo6bj8p7qp"]
 
 [ext_resource type="Script" uid="uid://cqcnaoyiiub4c" path="res://Scripts/tile.gd" id="1_t0yj4"]
 [ext_resource type="Shader" uid="uid://udojano5fij7" path="res://Scripts/tileshader.gdshader" id="2_iof5j"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_iof5j"]
+friction = 0.0
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_iof5j"]
 render_priority = 0
@@ -20,6 +23,7 @@ transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
 
 [node name="Ground" type="StaticBody3D" parent="."]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, -1, 0)
+physics_material_override = SubResource("PhysicsMaterial_iof5j")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Ground"]
 mesh = SubResource("BoxMesh_r4md0")

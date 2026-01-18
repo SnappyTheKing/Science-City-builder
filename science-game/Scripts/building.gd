@@ -49,7 +49,7 @@ func count_stats():
 	costMult = 1
 	
 	if building is Factory:
-		Global.time += building.extra_time
+		Global.bonus_time += building.extra_time
 	
 	for b in Global.get_tiles(Vector2(get_parent().get_parent().position.x, get_parent().get_parent().position.z)):
 		if b.building is Store:
