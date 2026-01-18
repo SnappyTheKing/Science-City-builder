@@ -1,8 +1,9 @@
-[gd_resource type="Resource" script_class="Apartment" load_steps=6 format=3 uid="uid://bu2evf8oro1yo"]
+[gd_resource type="Resource" script_class="Apartment" load_steps=7 format=3 uid="uid://bu2evf8oro1yo"]
 
 [ext_resource type="Script" uid="uid://c8aqncx3dgon" path="res://Scripts/Resources/apartment_class.gd" id="1_f73tx"]
 [ext_resource type="PackedScene" uid="uid://c47epdincb031" path="res://Assets/Comercial/building-f.glb" id="1_t6gan"]
 [ext_resource type="Resource" uid="uid://bo3l0t82eya0a" path="res://Scenes/Question_Packs/Climate.tres" id="2_7swcq"]
+[ext_resource type="PackedScene" uid="uid://dnfw0cec31rlh" path="res://Assets/Comercial/building-g.glb" id="2_hs424"]
 [ext_resource type="Script" uid="uid://cdflcmlgts2l2" path="res://Scripts/Resources/building_class.gd" id="3_m44es"]
 [ext_resource type="Resource" uid="uid://dkwa428d8pmtv" path="res://Scenes/Buildings/Apartment2.tres" id="4_7swcq"]
 
@@ -12,7 +13,7 @@ income = 5.0
 interval = 1.0
 name = "Tier 1 Apartment"
 question_pack = ExtResource("2_7swcq")
-model = Array[PackedScene]([ExtResource("1_t6gan")])
+model = Array[PackedScene]([ExtResource("1_t6gan"), ExtResource("2_hs424")])
 upgrades = Array[ExtResource("3_m44es")]([ExtResource("4_7swcq")])
 upgrade_cost = 100
 metadata/_custom_type_script = "uid://c8aqncx3dgon"

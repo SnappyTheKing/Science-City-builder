@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Park" load_steps=6 format=3 uid="uid://kggcv7hhgwxt"]
 
-[ext_resource type="PackedScene" uid="uid://bx0je6160v6l5" path="res://Assets/Residential/tree-large.glb" id="1_j5lag"]
+[ext_resource type="PackedScene" uid="uid://dic8h7v5w4vwl" path="res://Assets/Customs/large_park.tscn" id="1_qy8cc"]
 [ext_resource type="Script" uid="uid://bfe0xkfi3chv6" path="res://Scripts/Resources/park_class.gd" id="1_yvd80"]
 [ext_resource type="Script" uid="uid://cdflcmlgts2l2" path="res://Scripts/Resources/building_class.gd" id="2_i8y1l"]
 [ext_resource type="Resource" uid="uid://c3d2opnpmynq0" path="res://Scenes/Question_Packs/Biology.tres" id="2_qy8cc"]
@@ -11,7 +11,7 @@ script = ExtResource("1_yvd80")
 discount = 15.0
 name = "Large Park"
 question_pack = ExtResource("2_qy8cc")
-model = Array[PackedScene]([ExtResource("1_j5lag")])
+model = Array[PackedScene]([ExtResource("1_qy8cc")])
 upgrades = Array[ExtResource("2_i8y1l")]([ExtResource("4_qy8cc")])
 upgrade_cost = 250
 metadata/_custom_type_script = "uid://bfe0xkfi3chv6"

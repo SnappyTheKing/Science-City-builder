@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bqth1i1nu6ca1"]
+[gd_scene load_steps=6 format=3 uid="uid://bqth1i1nu6ca1"]
 
 [ext_resource type="PackedScene" uid="uid://bojnd7ldjxb4k" path="res://Assets/Residential/path-stones-messy.glb" id="1_wgb4n"]
 [ext_resource type="PackedScene" uid="uid://cfuupj2yy16yk" path="res://Assets/Residential/planter.glb" id="2_7ps81"]
 [ext_resource type="PackedScene" uid="uid://bbq3qb466mntj" path="res://Assets/Residential/tree-small.glb" id="3_ipptw"]
 [ext_resource type="PackedScene" uid="uid://bx0je6160v6l5" path="res://Assets/Residential/tree-large.glb" id="4_qq82r"]
+[ext_resource type="PackedScene" uid="uid://bi1338muntm2f" path="res://Assets/Imported/bench.tscn" id="5_ipptw"]
 
 [node name="SmallPark" type="Node3D"]
 
@@ -57,3 +58,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.87530243, 0, -1.1502751)
 
 [node name="tree-small7" parent="." instance=ExtResource("3_ipptw")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.2038393, 0, -1.4602414)
+
+[node name="16452WoodenBenchNew2" parent="." instance=ExtResource("5_ipptw")]
+transform = Transform3D(-0.01727123, 0.19925286, 8.709618e-09, -1.568924e-16, -8.742278e-09, 0.19999999, 0.19925286, 0.01727123, 7.54949e-10, 1.105648, 0, -0.21711722)

@@ -1,16 +1,19 @@
-[gd_resource type="Resource" script_class="Store" load_steps=6 format=3 uid="uid://cccxkk0ifxhnx"]
+[gd_resource type="Resource" script_class="Store" load_steps=9 format=3 uid="uid://cccxkk0ifxhnx"]
 
 [ext_resource type="Script" uid="uid://dch0b0d2j6tng" path="res://Scripts/Resources/store_class.gd" id="1_0ljj8"]
 [ext_resource type="PackedScene" uid="uid://boqfly1q65y67" path="res://Assets/Comercial/building-h.glb" id="1_j3s40"]
+[ext_resource type="PackedScene" uid="uid://bbqjauo3wfxc7" path="res://Assets/Industrial/building-d.glb" id="2_d30jp"]
 [ext_resource type="Resource" uid="uid://c0h804j60n8lf" path="res://Scenes/Question_Packs/Chemistry.tres" id="2_kbtt5"]
 [ext_resource type="Script" uid="uid://cdflcmlgts2l2" path="res://Scripts/Resources/building_class.gd" id="2_v6e5d"]
+[ext_resource type="PackedScene" uid="uid://p25gnedkn72g" path="res://Assets/Industrial/building-o.glb" id="3_hx3ug"]
 [ext_resource type="Resource" uid="uid://dd2mimpte3ho5" path="res://Scenes/Buildings/Store2.tres" id="4_kbtt5"]
+[ext_resource type="PackedScene" uid="uid://ba68yotakismt" path="res://Assets/Industrial/building-t.glb" id="4_n81e4"]
 
 [resource]
 script = ExtResource("1_0ljj8")
 name = "Tier 1 Store"
 question_pack = ExtResource("2_kbtt5")
-model = Array[PackedScene]([ExtResource("1_j3s40")])
+model = Array[PackedScene]([ExtResource("1_j3s40"), ExtResource("2_d30jp"), ExtResource("3_hx3ug"), ExtResource("4_n81e4")])
 upgrades = Array[ExtResource("2_v6e5d")]([ExtResource("4_kbtt5")])
 upgrade_cost = 250
 metadata/_custom_type_script = "uid://dch0b0d2j6tng"

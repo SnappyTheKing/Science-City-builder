@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://b70yf63m711dy"]
+
+[ext_resource type="PackedScene" uid="uid://crthncqnwhp3t" path="res://Assets/Comercial/building-j.glb" id="1_koye1"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="building-j2" parent="." instance=ExtResource("1_koye1")]
+
+[node name="building-j3" parent="." instance=ExtResource("1_koye1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.68, 0)

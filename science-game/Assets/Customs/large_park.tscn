@@ -1,0 +1,101 @@
+[gd_scene load_steps=9 format=3 uid="uid://dic8h7v5w4vwl"]
+
+[ext_resource type="PackedScene" uid="uid://bi1338muntm2f" path="res://Assets/Imported/bench.tscn" id="1_lmrky"]
+[ext_resource type="PackedScene" uid="uid://cwwhss2t8bw37" path="res://Assets/Residential/path-stones-long.glb" id="2_aejto"]
+[ext_resource type="PackedScene" uid="uid://bojnd7ldjxb4k" path="res://Assets/Residential/path-stones-messy.glb" id="3_o1xyp"]
+[ext_resource type="PackedScene" uid="uid://bvv448p6sa26w" path="res://Assets/Imported/Fountain.glb" id="4_q166f"]
+[ext_resource type="PackedScene" uid="uid://cfuupj2yy16yk" path="res://Assets/Residential/planter.glb" id="5_snhf2"]
+[ext_resource type="PackedScene" uid="uid://bx0je6160v6l5" path="res://Assets/Residential/tree-large.glb" id="6_i15wn"]
+[ext_resource type="PackedScene" uid="uid://bbq3qb466mntj" path="res://Assets/Residential/tree-small.glb" id="7_fls3j"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_4gf7o"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="16452WoodenBenchNew" parent="." instance=ExtResource("1_lmrky")]
+transform = Transform3D(-0.073261276, -0.18609886, -8.134639e-09, 1.1171679e-16, -8.742277e-09, 0.2, -0.18609886, 0.073261276, 3.2023517e-09, -0.7657138, 0, 0.5273284)
+
+[node name="path-stones-long2" parent="." instance=ExtResource("2_aejto")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -0.33775693, -0.025852203, 1.6448674)
+
+[node name="path-stones-long3" parent="." instance=ExtResource("2_aejto")]
+transform = Transform3D(1.0732152, 0, -1.6876638, 0, 2, 0, 1.6876638, 0, 1.0732152, 0.32305682, 0, 1.1185756)
+
+[node name="path-stones-long4" parent="." instance=ExtResource("2_aejto")]
+transform = Transform3D(1.9124461, 0, 0.58527744, 0, 2, 0, -0.58527744, 0, 1.9124461, 0.76384187, -0.025852203, 0.50819075)
+
+[node name="path-stones-long5" parent="." instance=ExtResource("2_aejto")]
+transform = Transform3D(1.8049151, 0, 0.8615577, 0, 2, 0, -0.8615577, 0, 1.8049151, -0.45055008, -0.025852203, -0.7961558)
+
+[node name="path-stones-long6" parent="." instance=ExtResource("2_aejto")]
+transform = Transform3D(1.7709008, 0, -0.92946774, 0, 2, 0, 0.92946774, 0, 1.7709008, -0.02494198, 0, -1.4831619)
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.05, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("BoxMesh_4gf7o")
+
+[node name="path-stones-messy2" parent="." instance=ExtResource("3_o1xyp")]
+transform = Transform3D(0.38796604, 0, -0.92167366, 0, 1, 0, 0.92167366, 0, 0.38796604, -0.14547598, 0, 1.0560086)
+
+[node name="path-stones-messy3" parent="." instance=ExtResource("3_o1xyp")]
+transform = Transform3D(-0.69896466, 0, -0.71515614, 0, 1, 0, 0.71515614, 0, -0.69896466, -0.00020575523, 0, 1.5171286)
+
+[node name="path-stones-messy2" parent="path-stones-messy3" instance=ExtResource("3_o1xyp")]
+transform = Transform3D(0.1953642, 0, -0.98073065, 0, 1, 0, 0.98073065, 0, 0.1953642, -0.956, 0, 0.227)
+
+[node name="path-stones-messy4" parent="." instance=ExtResource("3_o1xyp")]
+transform = Transform3D(0.6066546, 0, -0.79496545, 0, 1, 0, 0.79496545, 0, 0.6066546, -0.4390291, 0, -1.3925079)
+
+[node name="path-stones-messy5" parent="." instance=ExtResource("3_o1xyp")]
+transform = Transform3D(0.6568359, 0, -0.7540335, 0, 1, 0, 0.7540335, 0, 0.6568359, -0.06628376, 0, -0.9309881)
+
+[node name="Root Scene" parent="." instance=ExtResource("4_q166f")]
+transform = Transform3D(0.2, 0, 0, 0, 0.2, 0, 0, 0, 0.2, 0, 0, 0)
+
+[node name="16452WoodenBenchNew2" parent="." instance=ExtResource("1_lmrky")]
+transform = Transform3D(0.073300205, 0.18608354, 8.133969e-09, 0, -8.742278e-09, 0.2, 0.18608354, -0.073300205, -3.204054e-09, 0.8145487, 0, -0.4633783)
+
+[node name="planter2" parent="." instance=ExtResource("5_snhf2")]
+transform = Transform3D(1.2400237, 0, -1.5691849, 0, 2, 0, 1.5691849, 0, 1.2400237, 0.9678552, 0, 1.5279313)
+
+[node name="planter3" parent="." instance=ExtResource("5_snhf2")]
+transform = Transform3D(1.2400237, 0, -1.5691849, 0, 2, 0, 1.5691849, 0, 1.2400237, 1.4595727, 0, 1.1338601)
+
+[node name="tree-large2" parent="." instance=ExtResource("6_i15wn")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -0.8174403, 0, 1.1404201)
+
+[node name="tree-small2" parent="." instance=ExtResource("7_fls3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3806928, 0, 1.6092043)
+
+[node name="tree-large3" parent="." instance=ExtResource("6_i15wn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.3917507, 0, 0.9178568)
+
+[node name="tree-large4" parent="." instance=ExtResource("6_i15wn")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -0.95458853, -0.032537937, -0.17577216)
+
+[node name="tree-small3" parent="." instance=ExtResource("7_fls3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4008558, 2.3841858e-07, 0.23085329)
+
+[node name="tree-large5" parent="." instance=ExtResource("6_i15wn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.7092094, 0.063504696, -0.21542361)
+
+[node name="tree-large6" parent="." instance=ExtResource("6_i15wn")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, -1.0505841, 0, -1.1311388)
+
+[node name="tree-small4" parent="." instance=ExtResource("7_fls3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5154952, 0, -1.5749213)
+
+[node name="tree-large7" parent="." instance=ExtResource("6_i15wn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.446393, 0, -1.4529127)
+
+[node name="tree-large8" parent="." instance=ExtResource("6_i15wn")]
+transform = Transform3D(1.7, 0, 0, 0, 1.7, 0, 0, 0, 1.7, 1.5968435, 2.3841858e-07, 0.093539)
+
+[node name="tree-small5" parent="." instance=ExtResource("7_fls3j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.3589745, 4.7683716e-07, -0.31751695)
+
+[node name="tree-small6" parent="." instance=ExtResource("7_fls3j")]
+transform = Transform3D(1.5, 0, 0, 0, 1.5, 0, 0, 0, 1.5, 1.6668618, 4.7683716e-07, -0.5694455)
+
+[node name="planter4" parent="." instance=ExtResource("5_snhf2")]
+transform = Transform3D(-0.7186584, 0, -1.8664218, 0, 2, 0, 1.8664218, 0, -0.7186584, 1.156942, 0, -1.2760086)
