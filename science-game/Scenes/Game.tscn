@@ -1,6 +1,7 @@
-[gd_scene load_steps=12 format=3 uid="uid://cooitn3q3xpqa"]
+[gd_scene load_steps=17 format=3 uid="uid://cooitn3q3xpqa"]
 
 [ext_resource type="Script" uid="uid://b7f0m2advcbck" path="res://Scripts/game.gd" id="1_iukft"]
+[ext_resource type="Shader" uid="uid://cmb23l8310rda" path="res://Scripts/water.gdshader" id="2_b2bpf"]
 [ext_resource type="Script" uid="uid://diukjg6h42trn" path="res://Scripts/camera.gd" id="2_gl6un"]
 [ext_resource type="PackedScene" uid="uid://1n2id8a6bg2j" path="res://Scenes/Hud.tscn" id="4_b2bpf"]
 [ext_resource type="PackedScene" uid="uid://cpy3mibpp5xm7" path="res://Scenes/tooltip.tscn" id="4_kldst"]
@@ -18,11 +19,30 @@ sky = SubResource("Sky_j5yw3")
 tonemap_mode = 2
 glow_enabled = true
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_j5yw3"]
-albedo_color = Color(0.19607843, 1, 1, 1)
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_b2bpf"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_7lihs"]
+noise = SubResource("FastNoiseLite_b2bpf")
+seamless = true
+
+[sub_resource type="FastNoiseLite" id="FastNoiseLite_fgofq"]
+
+[sub_resource type="NoiseTexture2D" id="NoiseTexture2D_2irst"]
+noise = SubResource("FastNoiseLite_fgofq")
+seamless = true
+as_normal_map = true
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_b2bpf"]
+render_priority = 0
+shader = ExtResource("2_b2bpf")
+shader_parameter/noise = SubResource("NoiseTexture2D_7lihs")
+shader_parameter/normalmap = SubResource("NoiseTexture2D_2irst")
+shader_parameter/height_scale = 0.5
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_kldst"]
-material = SubResource("StandardMaterial3D_j5yw3")
+material = SubResource("ShaderMaterial_b2bpf")
+subdivide_width = 256
+subdivide_depth = 256
 
 [sub_resource type="HeightMapShape3D" id="HeightMapShape3D_kldst"]
 map_width = 100
@@ -45,13 +65,15 @@ directional_shadow_split_3 = 0.717
 environment = SubResource("Environment_kldst")
 
 [node name="Water" type="StaticBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 25, 0, 25)
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Water"]
-transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 4.318, 0, -13.246)
+transform = Transform3D(100, 0, 0, 0, 100, 0, 0, 0, 100, 0, -0.8, 0)
 mesh = SubResource("PlaneMesh_kldst")
 skeleton = NodePath("../..")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Water"]
+visible = false
 shape = SubResource("HeightMapShape3D_kldst")
 
 [node name="Camera" type="RigidBody3D" parent="."]

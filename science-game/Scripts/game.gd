@@ -5,6 +5,9 @@ var tile = preload("res://Scenes/Tile.tscn")
 @export var noise = FastNoiseLite.new()
 
 func _ready() -> void:
+	startGame()
+
+func startGame():
 	print("Game Started")
 	noise.noise_type = FastNoiseLite.TYPE_PERLIN
 	noise.seed = randi()
@@ -18,5 +21,6 @@ func _ready() -> void:
 				var t = tile.instantiate()
 				
 				t.position = Vector3(2*x, height ,2*y)
+				t.scale = Vector3(1,height/2 + 1,1)
 				Global.map.append(t)
 				add_child(t)
