@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_wu2wv")
-question = "The following is a ____ equation:  2NH4 + Cr2O7 → Cr2O3 + N2 + 4H2O+  Methane → Water + Carbon dioxide"
+question = "The following is a ____ equation:  2NH4 + Cr2O7 → Cr2O3 + N2 + 4H2O"
 answers = Array[String](["Decomposition", "Synthesis", "Double replacement", "Single Replacement"])
 metadata/_custom_type_script = "uid://bplkqvagqe0vj"

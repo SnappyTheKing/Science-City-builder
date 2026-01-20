@@ -4,7 +4,7 @@
 [ext_resource type="Shader" uid="uid://cmb23l8310rda" path="res://Scripts/water.gdshader" id="2_b2bpf"]
 [ext_resource type="Script" uid="uid://diukjg6h42trn" path="res://Scripts/camera.gd" id="2_gl6un"]
 [ext_resource type="PackedScene" uid="uid://1n2id8a6bg2j" path="res://Scenes/Hud.tscn" id="4_b2bpf"]
-[ext_resource type="PackedScene" uid="uid://0xb28axtdirx" path="res://Scenes/tooltip.tscn" id="4_kldst"]
+[ext_resource type="PackedScene" uid="uid://cpy3mibpp5xm7" path="res://Scenes/tooltip.tscn" id="4_kldst"]
 [ext_resource type="PackedScene" uid="uid://b8whbph0fjtwo" path="res://Scenes/start_menu.tscn" id="6_7lihs"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gl6un"]

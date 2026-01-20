@@ -4,6 +4,6 @@
 
 [resource]
 script = ExtResource("1_q4f6b")
-question = "What kind of reaction is this? U(NO3)4 + Pm2(SO4)3 →U(SO4)2 + Pm(NO3)3H2O+  Methane → Water + Carbon dioxide"
+question = "What kind of reaction is this? U(NO3)4 + Pm2(SO4)3 →U(SO4)2 + Pm(NO3)3H2O"
 answers = Array[String](["Double-Replacement", "Decomposition", "Combustion", "Single Replacement"])
 metadata/_custom_type_script = "uid://bplkqvagqe0vj"

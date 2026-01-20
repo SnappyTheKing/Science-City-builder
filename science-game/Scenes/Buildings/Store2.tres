@@ -10,7 +10,7 @@
 
 [resource]
 script = ExtResource("1_a55ny")
-productivity = 15.0
+productivity = 25.0
 name = "Tier 2 Store"
 question_pack = ExtResource("3_exrfa")
 model = Array[PackedScene]([ExtResource("2_exrfa"), ExtResource("2_rrj2n"), ExtResource("3_xgj1k")])

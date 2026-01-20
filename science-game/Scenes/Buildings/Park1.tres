@@ -8,6 +8,7 @@
 
 [resource]
 script = ExtResource("1_kv6uf")
+discount = 15.0
 name = "Small Park"
 question_pack = ExtResource("2_vopkk")
 model = Array[PackedScene]([ExtResource("1_vopkk")])

@@ -33,6 +33,7 @@ layout_mode = 2
 [node name="QuestionName" type="RichTextLabel" parent="VBoxContainer/MarginContainer/PanelContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_font_sizes/normal_font_size = 32
 text = "Placeholder Question"
 horizontal_alignment = 1
 vertical_alignment = 1

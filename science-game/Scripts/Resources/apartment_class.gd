@@ -18,5 +18,6 @@ func timer_elapsed():
 func get_tooltip_text() -> String:
 	var s := name
 	s += "\nIncome: " + str(income * parent.moneyMult) + " / " + str(interval) + "s"
-	s += "\nUpgrade Cost: " + str(upgrade_cost * parent.costMult)
+	if upgrade_cost > 0:
+		s += "\nUpgrade Cost: " + str(upgrade_cost * parent.costMult)
 	return s

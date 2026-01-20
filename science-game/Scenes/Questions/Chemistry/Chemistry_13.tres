@@ -5,5 +5,5 @@
 [resource]
 script = ExtResource("1_oxb36")
 question = "Name the molecular compound: CS2"
-answers = Array[String](["Carbon Disulfide", "Carbon Bisulfer", "Carbon Disulfate", "Monocarbon disulfer"])
+answers = Array[String](["Carbon disulfide", "Carbon bisulfer", "Carbon disulfate", "Monocarbon disulfer"])
 metadata/_custom_type_script = "uid://bplkqvagqe0vj"

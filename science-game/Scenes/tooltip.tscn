@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://cpy3mibpp5xm7"]
 
-[ext_resource type="Script" path="res://Scripts/tooltip.gd" id="1_ogi1g"]
+[ext_resource type="Script" uid="uid://cvgd3u8cd55cy" path="res://Scripts/tooltip.gd" id="1_ogi1g"]
 
 [node name="Tooltip" type="PanelContainer"]
 offset_right = 21.0
