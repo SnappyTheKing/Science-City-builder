@@ -1,10 +1,11 @@
-[gd_scene load_steps=17 format=3 uid="uid://cooitn3q3xpqa"]
+[gd_scene load_steps=18 format=3 uid="uid://cooitn3q3xpqa"]
 
 [ext_resource type="Script" uid="uid://b7f0m2advcbck" path="res://Scripts/game.gd" id="1_iukft"]
 [ext_resource type="Shader" uid="uid://cmb23l8310rda" path="res://Scripts/water.gdshader" id="2_b2bpf"]
 [ext_resource type="Script" uid="uid://diukjg6h42trn" path="res://Scripts/camera.gd" id="2_gl6un"]
 [ext_resource type="PackedScene" uid="uid://1n2id8a6bg2j" path="res://Scenes/Hud.tscn" id="4_b2bpf"]
 [ext_resource type="PackedScene" uid="uid://cpy3mibpp5xm7" path="res://Scenes/tooltip.tscn" id="4_kldst"]
+[ext_resource type="PackedScene" uid="uid://b8whbph0fjtwo" path="res://Scenes/start_menu.tscn" id="6_7lihs"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gl6un"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -20,6 +21,7 @@ tonemap_mode = 2
 glow_enabled = true
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_b2bpf"]
+noise_type = 3
 frequency = 0.001
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_7lihs"]
@@ -27,6 +29,7 @@ noise = SubResource("FastNoiseLite_b2bpf")
 seamless = true
 
 [sub_resource type="FastNoiseLite" id="FastNoiseLite_fgofq"]
+noise_type = 3
 frequency = 0.001
 
 [sub_resource type="NoiseTexture2D" id="NoiseTexture2D_2irst"]
@@ -93,3 +96,9 @@ shape = SubResource("SphereShape3D_kldst")
 visible = false
 
 [node name="HUD" parent="." instance=ExtResource("4_b2bpf")]
+unique_name_in_owner = true
+visible = false
+
+[node name="Start_menu" parent="." instance=ExtResource("6_7lihs")]
+
+[connection signal="start_game" from="Start_menu" to="." method="_on_start_game"]

@@ -6,7 +6,7 @@ extends RigidBody3D
 @export var move_speed : float = 5.0
 @export var height_speed : float = 1.0
 
-var camera_enabled: bool = true
+@export var camera_enabled: bool = false
 
 var velocity : Vector3 = Vector3.ZERO
 var mouse_movement_delta : Vector2

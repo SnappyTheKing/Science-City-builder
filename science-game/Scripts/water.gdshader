@@ -15,8 +15,8 @@ float wave(vec2 position){
 }
 
 float height(vec2 position, float time) {
-	float d = wave(position * 0.3 + time * 0.01) * 0.3;
-	d += wave(position * 0.65 + time * 0.03) * 0.1;
+	float d = wave(position * 0.3 + time * 0.015) * 0.3;
+	d += wave(position * 0.65 + time * 0.005) * 0.1;
 	
 	return d;
 }

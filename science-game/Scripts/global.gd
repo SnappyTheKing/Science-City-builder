@@ -1,8 +1,10 @@
 extends Node
 
+var started = false
+
 var money = 0
 
-var time = 310
+var time = 300
 var bonus_time = 0
 
 var map: Array[Tile]

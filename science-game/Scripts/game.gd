@@ -1,13 +1,25 @@
 extends Node3D
 
+@onready var hud = get_node("%HUD")
 
 var tile = preload("res://Scenes/Tile.tscn")
+var endScreen = preload("res://Scenes/end_screen.tscn")
+
 @export var noise = FastNoiseLite.new()
 
 func _ready() -> void:
-	startGame()
+	pass
 
-func startGame():
+func _process(delta: float) -> void:
+	if hud.current_time() and Global.started:
+		Global.started = false
+		add_child(endScreen.instantiate())
+
+func _on_start_game() -> void:
+	Global.started = true
+	get_node("HUD").show()
+	get_node("Camera").camera_enabled = true
+	
 	print("Game Started")
 	noise.noise_type = FastNoiseLite.TYPE_PERLIN
 	noise.seed = randi()
