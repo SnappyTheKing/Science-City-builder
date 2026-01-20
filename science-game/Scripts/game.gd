@@ -34,5 +34,6 @@ func _on_start_game() -> void:
 				
 				t.position = Vector3(2*x, height ,2*y)
 				t.scale = Vector3(1,height/2 + 1,1)
+				t.get_child(0).scale = Vector3(0.5, 0.5/t.scale.y, 0.5) 
 				Global.map.append(t)
 				add_child(t)
